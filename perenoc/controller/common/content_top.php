@@ -1,6 +1,6 @@
 <?php
 namespace Opencart\Catalog\Controller\Common;
-class ColumnLeft extends \Opencart\System\Engine\Controller {
+class ContentTop extends \Opencart\System\Engine\Controller {
 	public function index(): string {
 		$this->load->model('design/layout');
 
@@ -50,7 +50,7 @@ class ColumnLeft extends \Opencart\System\Engine\Controller {
 
 		$data['modules'] = [];
 
-		$modules = $this->model_design_layout->getModules($layout_id, 'column_left');
+		$modules = $this->model_design_layout->getModules($layout_id, 'content_top');
 
 		foreach ($modules as $module) {
 			$part = explode('.', $module['code']);
@@ -76,6 +76,6 @@ class ColumnLeft extends \Opencart\System\Engine\Controller {
 			}
 		}
 
-		return $this->load->view('common/column_left', $data);
+		return $this->load->view('common/configuration', $data);
 	}
 }

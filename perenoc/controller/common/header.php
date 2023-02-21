@@ -29,6 +29,7 @@ class Header extends \Opencart\System\Engine\Controller {
 		$data['bootstrap'] = 'catalog/view/stylesheet/bootstrap.css';
 		$data['icons'] = 'catalog/view/stylesheet/fonts/fontawesome/css/all.min.css';
 		$data['stylesheet'] = 'catalog/view/stylesheet/stylesheet.css';
+		$data['adaptive'] = 'catalog/view/stylesheet/adaptive.css';
 
 		// Hard coding scripts so they can be replaced via the event's system.
 		$data['jquery'] = 'catalog/view/javascript/jquery/jquery-3.6.0.min.js';
@@ -76,11 +77,9 @@ class Header extends \Opencart\System\Engine\Controller {
 		$data['contact'] = $this->url->link('information/contact', 'language=' . $this->config->get('config_language'));
 		$data['telephone'] = $this->config->get('config_telephone');
 
-		$data['language'] = $this->load->controller('common/language');
-		$data['currency'] = $this->load->controller('common/currency');
-		$data['search'] = $this->load->controller('common/search');
-		$data['cart'] = $this->load->controller('common/cart');
-		$data['menu'] = $this->load->controller('common/menu');
+
+		//$data['configuration__block'] = $this->load->controller('common/configuration__block');
+
 
 		return $this->load->view('common/header', $data);
 	}

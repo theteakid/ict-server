@@ -76,6 +76,6 @@ class ContentBottom extends \Opencart\System\Engine\Controller {
 			}
 		}
 
-		return $this->load->view('common/content_bottom', $data);
+		return $this->load->view('common/new_product', $data);
 	}
 }
