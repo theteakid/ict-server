@@ -1,11 +1,10 @@
-/*LAST UPDATE - 02.21.2023 8:46 PM*/
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 body {
     font-family: 'IBM Plex Sans', sans-serif;
     min-width: 685px;
 }
 .header {
-    background-image: url(../image/bg.png);
+    background-image: url('../images/bg.png');
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,8 +13,43 @@ body {
     padding-bottom: 40px;
 }
 .container {
-    max-width: 1440px;
-    padding: 0 240px;
+    padding: 0 120px;
+}
+.header .topline {
+    background: #020905;
+    height: 36px;
+    width: 100%;
+}
+.topline .tl--cont {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0 120px;
+    display: flex;
+}
+.topline .tl--cont .tlc--wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.topline .tl--cont .tlc--wrap a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-underline-offset: 4px;
+}
+.topline .tl--cont .tlc--wrap a:hover {
+    text-decoration: underline;
+}
+.topline .tl--cont .tlc--wrap-left {
+    justify-content: left;
+}
+.topline .tl--cont .tlc--wrap-right {
+    justify-content: right;
+}
+.tl--cont .tlc--elem {
 }
 .header__menu {
     display: flex;
@@ -59,7 +93,7 @@ body {
     position: absolute;
     width: 14px;
     height: 14px;
-    background: url('catalog/view/image/search.png');
+    background: url('../images/search.png');
     margin-left: 440px;
     margin-top: 11px;
     z-index: 1;
@@ -75,6 +109,12 @@ body {
     height: 36px;
     padding: 0px 16px;
     outline: 0;
+    font-size: 16px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+}
+.nav__search input::placeholder {
+    color: #998181;
 }
 .nav__search input:focus {
     box-shadow: 0px 0px 4px 4px rgba(170, 161, 255, 0.484);
@@ -164,6 +204,7 @@ body {
 }
 .box__title {
     margin-bottom: 39px;
+    font-weight: 900;
 }
 .topik {
     margin-top: 80px;
@@ -192,13 +233,12 @@ body {
     font-size: 16px;
 }
 .feed-container {
-    padding: 79px 240px;
+    padding: 79px 120px;
 }
 .configuration__block {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1340px;
     padding: 62px 70px;
     margin: 0 auto;
     height: auto;
@@ -279,7 +319,6 @@ body {
     padding-right: 15px;
     padding-bottom: 10px;
     padding-top: 100px;
-    max-width: 1340px;
     margin: 0 auto;
 }
 .novinki .btn-showmore {
@@ -401,7 +440,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1340px; 
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -488,7 +526,7 @@ sup {
 .form label::before {
     position: relative;
     margin-right: 8px;
-    content: url('catalog/view/image/clip.png');
+    content: url('../images/clip.png');
 }
 .form-button {
     transition: .4s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -529,7 +567,6 @@ sup {
     font-size: 18px;
 }
 .footer {
-    max-width: 1340px;
     padding: 0 240px;
 }
 .footer .contact-block {
@@ -543,6 +580,10 @@ sup {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
 }
 .contact-block .cross-close {
     position: absolute;
@@ -607,13 +648,13 @@ sup {
 }
 .item-link a:hover {
     text-decoration: underline;
-    text-underline-offset: 4px;
 }
 .item-link a {
     padding-top: 8px;
     color: #0A0806 !important;
     text-decoration: none;
     font-size: 16px;
+    text-underline-offset: 4px;
 }
 .contacts {
     display: flex;
