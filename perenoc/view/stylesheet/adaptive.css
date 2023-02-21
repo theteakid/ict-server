@@ -176,3 +176,24 @@
         flex-direction: column;
     }
 }
+@media (max-width: 1463px) {
+    .right-contact a {
+        
+    }
+}
+@media (max-width: 1290px) {
+    .feed-container {
+        padding: 39px 120px;
+    }
+    .footer {
+        padding: 0 180px;
+    }
+    .footer .contact-block {
+        width: 137px;
+        height: 132px;
+        padding: 10px;
+    }
+    .contact-block .cb-elem a button {
+        font-size: 14px;
+    }
+}

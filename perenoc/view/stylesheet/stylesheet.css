@@ -191,7 +191,7 @@ body {
     font-size: 16px;
 }
 .feed-container {
-    padding: 79px 95px;
+    padding: 79px 240px;
 }
 .configuration__block {
     display: flex;
@@ -293,10 +293,11 @@ body {
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
+    letter-spacing: 0.05em;
 }
 .novinki .btn-showmore:active {
     color: #1e4eb5;
-    background: #ebefff;
+    background: #e1ebf5;
 }
 .novinki h1 {
     font-size: 36px;
@@ -339,7 +340,8 @@ body {
 .card-text {
 }
 .card-text h3 {
-    font-family: 'ipsbold';
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
 }
 .card-text h3 {
     font-size: 20px;
@@ -361,7 +363,7 @@ body {
     font-size: 20px;
     font-weight: 800;
     padding-bottom: 5px;
-    font-family: 'ipsbold';
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 .card-fns span {
     color: #737F8C;
@@ -415,7 +417,8 @@ body {
 
 .novo-text {
     letter-spacing: 0.006em;
-    font-family: 'ipsbold';
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 800;
 }
 .light {
     font-size: 36px;
@@ -438,7 +441,7 @@ body {
     font-size: 36px;
     font-weight: 600;
     text-align: center;
-    font-family: 'ipsbold';
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 sup {
     color: #FF624F;
@@ -458,7 +461,7 @@ sup {
     border: 0;
 }
 .form input[type="text"], .form input[type="email"] {
-    font-family: 'ips';
+    font-family: 'IBM Plex Sans', sans-serif;
     max-width: 400px;
     height: 48px;
     border-radius: 10px;
@@ -496,9 +499,10 @@ sup {
     font-weight: 600;
     margin-top: 20px;
     border: none;
-    font-family: 'ips';
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 18px;
     cursor: pointer;
+    letter-spacing: 0.05em;
 }
 .form-button:hover {
     background-color: #2154c2;
@@ -525,16 +529,72 @@ sup {
 }
 .footer {
     max-width: 1340px;
-    margin: 0 auto;
-    padding: 0px 15px;
+    padding: 0 240px;
+}
+.footer .contact-block {
+    position: absolute;
+    left: 16px;
+    width: 167px;
+    height: 162px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 16px rgba(0, 26, 52, 0.16);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.contact-block .cross-close {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 10px;
+    right: 10px;
+    background-image: url('../image/cross.png');
+    background-size: cover;
+    cursor: pointer;
+}
+.contact-block .cb-elem {
+    height: 100%;
+    display: flex;
+    font-weight: 600;
+}
+.contact-block .cb-elem a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    width: 100%;
+    color: #000;
+    font-weight: 800;
+}
+.contact-block .cb-elem a button {
+    transition: .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 100%;
+    height: 100%;
+    background: #2560DC;
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'IBM Plex Sans', sans-serif;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    cursor: pointer;
+}
+.contact-block .cb-elem a button:hover {
+    background-color: #2154c2;
+}
+.contact-block .cb-elem a button:active {
+    background-color: #2b6eff;
 }
 .footter {
     display: flex;
-    gap: 60px;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-around;
 }
 .menu1 {
-    padding-top: 10px;
+    padding: 10px;
 }
 .menu1 h1{
     font-size: 24px;
@@ -578,9 +638,17 @@ sup {
     border-radius: 10px;
     padding: 8px 24px;
 }
+.right-contact a button {
+    background: 0;
+    border: 0;
+    cursor: pointer;
+    color: #2560DC !important;
+    font-weight: 600;
+    font-family: 'IBM Plex Sans', sans-serif;
+    letter-spacing: 0.05em;
+}
 .right-contact a:active {
-    color: #1e4eb5;
-    background: #ebefff;
+    background: #e1ebf5;
 }
 .info p {
     color: #737F8C;
@@ -595,4 +663,5 @@ sup {
     padding-bottom: 20px;
     color: #737F8C;
     font-size: 14px;
+    text-align: center;
 }

@@ -76,6 +76,6 @@ class ContentTop extends \Opencart\System\Engine\Controller {
 			}
 		}
 
-		return $this->load->view('common/configuration', $data);
+		return $this->load->view('common/configuration__bloc', $data);
 	}
 }
