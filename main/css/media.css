@@ -1,10 +1,4 @@
 @media (max-width: 1210px) {
-    .nomber {
-        display: none;
-    }
-.header__nav {
-    display: none;
-}
 .information {
     display: flex;
     align-items: center;
@@ -175,5 +169,10 @@
         text-decoration: none;
         font-size: 12px;
         font-weight: 600;
+    }
+}
+@media (max-width: 1492px) {
+    .header__menu {
+        flex-direction: column;
     }
 }
