@@ -32,8 +32,12 @@ class Header extends \Opencart\System\Engine\Controller {
 		$data['adaptive'] = 'catalog/view/stylesheet/adaptive.css';
 		$data['reset'] = 'catalog/view/stylesheet/reset.css';
 
+
+
 		// Hard coding scripts so they can be replaced via the event's system.
-		$data['jquery'] = 'catalog/view/javascript/jquery/jquery-3.6.0.min.js';
+		$data['jquery'] = 'catalog/view/javascript/jquery/	jquery-3.6.0.min.js';
+		$data['cont_js'] = 'catalog/view/javascript/index.js';
+
 
 		$data['links'] = $this->document->getLinks();
 		$data['styles'] = $this->document->getStyles();
