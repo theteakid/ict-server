@@ -1,3 +1,4 @@
+/*LAST UPDATE - 02.21.2023 8:46 PM*/
 document.querySelector('.contact-block .cross-close').addEventListener('click',()=>{
     document.querySelector('.contact-block').remove();
 });
