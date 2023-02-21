@@ -30,6 +30,7 @@ class Header extends \Opencart\System\Engine\Controller {
 		$data['icons'] = 'catalog/view/stylesheet/fonts/fontawesome/css/all.min.css';
 		$data['stylesheet'] = 'catalog/view/stylesheet/stylesheet.css';
 		$data['adaptive'] = 'catalog/view/stylesheet/adaptive.css';
+		$data['reset'] = 'catalog/view/stylesheet/reset.css';
 
 		// Hard coding scripts so they can be replaced via the event's system.
 		$data['jquery'] = 'catalog/view/javascript/jquery/jquery-3.6.0.min.js';
