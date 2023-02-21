@@ -35,7 +35,7 @@
     gap: 6px;
 }
 .tab__item a{
-    color: white !important;
+    color: white;
     text-decoration: none;
     font-weight: 600;
     font-size: 15px;
@@ -123,47 +123,57 @@
     color: #c6cace;
     font-weight: 600;
 }
-.form-text {
-    margin-top: 81px;
-    text-align: center;
-    font-size: 14px;
-}
 .form-title {
     font-size: 25px;
-    font-weight: 600;
-    text-align: center;
-}
-.conf__text h3 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 30px;
-    padding-top: 60px;
-}
-.conf__text a {
-    background-color: #2560DC;
-    padding: 12px 24px;
-    border-radius: 10px;
-    color: white !important;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 600;
-}
-.conf__img img {
-    height: 240px;
-}
-.title__text {
- display: none;
 }
 }
 @media (max-width: 484px) {
+}
+@media (max-width: 665px) {
+    .novinki .box-card {
+        flex-direction: column;
+    }
+    .feed-container {
+        padding: 39px 47px;
+    }
+    .card-fns {
+        gap: 0;
+    }
+}
+@media (max-width: 1009px) {
+    .conf__img img {
+        height: 240px;
+    }
+    .title__text {
+        display: none;
+    }
+    .conf__text h3 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    .configuration__block {
+        padding: 31px 35px;
+    }
+}
+@media (max-width: 759px) {
+    .img-conf {
+        display: none;
+    }
     .configuration__block {
         column-width: 400px;
     }
     .conf__text {
-       text-align: center;
-       width: 100%;
+        text-align: center;
+        width: 100%;
     }
-    .img-conf {
-        display: none;
+    .conf__text a {
+        background-color: #2560DC;
+        padding: 12px 24px;
+        border-radius: 10px;
+        color: white !important;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 600;
     }
 }
