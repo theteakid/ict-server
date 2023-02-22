@@ -42,7 +42,27 @@
     display: none;
 }
 }
+@media (max-width: 781px) {
+    .range-box {
+        font-size: 12px;
+    }
+    .range-box .prc-elem p {
+        font-size: 12px !important;
+    }
+    .range-box .prc-elem input {
+        font-size: 12px !important;
+    }
+}
 @media (max-width: 850px) {
+    .novinki .box-card {
+        flex-direction: column;
+    }
+    .feed-container {
+        padding: 39px 47px;
+    }
+    .card-fns {
+        gap: 0;
+    }
     .novo-img {
         display: none;
     }
@@ -123,17 +143,6 @@
 }
 @media (max-width: 484px) {
 }
-@media (max-width: 850px) {
-    .novinki .box-card {
-        flex-direction: column;
-    }
-    .feed-container {
-        padding: 39px 47px;
-    }
-    .card-fns {
-        gap: 0;
-    }
-}
 @media (max-width: 1009px) {
     .conf__img img {
         height: 240px;
@@ -171,7 +180,7 @@
         font-weight: 600;
     }
 }
-@media (max-width: 1492px) {
+@media (max-width: 1300px) {
     .header__menu {
         flex-direction: column;
     }

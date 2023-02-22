@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <title>SERVER ICT - интернет-магазин</title>
+</head>
+<body class="catalog-servers">
+    <div class="header" style="background: 0;">
+        <div class="topline">
+            <div class="tl--cont">
+                <div class="tlc--wrap-left tlc--wrap">
+                    <div class="tlc--elem">
+                        <a href="#">Оплата и доставка</a>
+                    </div>
+                    <div class="tlc--elem">
+                        <a href="#">Контакты</a>
+                    </div>
+                    <div class="tlc--elem">
+                        <a href="#">О компании</a>
+                    </div>
+                </div>
+                <div class="tlc--wrap-right tlc--wrap">
+                    <div class="tlc--elem">
+                        <div class="dropdown-container">
+                            <div class="dropdown">
+                                <div class="content-container">
+                                <div class="cont hidden">
+                                    <div class="option" id="0"><img class="ddc-opt-LangIco" src="image/flag-ru.png" draggable="false">Русский</div>
+                                    <div class="option" id="1"><img class="ddc-opt-LangIco" src="image/flag-us.png" draggable="false">English, USA</div>
+                                    <div class="option" id="2"><img class="ddc-opt-LangIco" src="image/flag-israel.png" draggable="false">עברית</div>
+                                    <div class="option" id="3"><img class="ddc-opt-LangIco" src="image/flag-china.png" draggable="false">中国人</div>
+                                </div>
+                                </div>
+                                <div class="upper" chosenOption="0">
+                                    <div id="ico-lang"></div><p>Option here</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header__menu">
+                <div class="header__logo">
+                    <a href="index.html"><img draggable="false" src="image/logotype2.png" alt></a>
+                </div>
+                <div class="header__nav">
+                    <div class="nav__catalog">
+                        <button class="btn__catalog">Каталог</button>
+                    </div>
+                    <div class="nav__search">
+                        <div class="nav__search-ico"></div>
+                        <form action="#">
+                            <input placeholder="Поиск" type="search" style="
+                            background: #FFFFFF;
+                            border: 2px solid #2560DC;
+                            border-radius: 10px;">
+                        </form>
+                    </div>
+                </div>
+                <div class="header__right">
+                    <div class="nomber">
+                        8 800 000-00-00
+                    </div>
+                    <div class="cart">
+                        <a href>
+                            <img draggable="false" src="image/cart.png" alt>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ctg__main-container">
+        <div class="tinyblock">
+            <p>Server ICT > Серверы</p>
+        </div>
+        <span class="title-cont">
+            <p id="bigtitle" class="title-cont-elem">Серверы</p>
+            <p id="pownum" class="title-cont-elem">123</p>
+        </span>
+        <div class="prod-content">
+            <div class="left-block prod-content-elem" style="width: 308px;padding:24px;">
+                <div class="filter-content">
+                    <div class="filter-content-elem">
+                        <p>Доставка</p> 
+                        <div class="fce-wrapper">
+                            <label class="checkboxcont">
+                                <p>со склада в Китае</p>
+                                <input type="checkbox" id="cb-delivery-china">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="fce-wrapper">
+                            <label class="checkboxcont">
+                                <p>со склада в России</p>
+                                <input type="checkbox" id="cb-delivery-rus">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-content-elem">
+                        <p>Бренд</p> 
+                        <div class="fce-wrapper">
+                            <label class="checkboxcont">
+                                <p>Dell</p>
+                                <input type="checkbox" id="cb-brand-dell">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="fce-wrapper">
+                            <label class="checkboxcont">
+                                <p>Lenovo</p>
+                                <input type="checkbox" id="cb-brand-lenovo">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="fce-wrapper">
+                            <label class="checkboxcont">
+                                <p>Hewlett Packard</p>
+                                <input type="checkbox" id="cb-brand-hp">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-content-elem">
+                        <p>Форм-фактор</p> 
+                        <div class="fce-wrapper">
+                            <label class="checkboxcont">
+                                <p>Все</p>
+                                <input type="checkbox" id="cb-formfactor-all">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="fce-wrapper">
+                            <label class="checkboxcont">
+                                <p>U1</p>
+                                <input type="checkbox" id="cb-formfactor-u1">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="fce-wrapper">
+                            <label class="checkboxcont">
+                                <p>U2</p>
+                                <input type="checkbox" id="cb-formfactor-u2">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="fce-wrapper">
+                            <label class="checkboxcont">
+                                <p>U3</p>
+                                <input type="checkbox" id="cb-formfactor-u3">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="fce-wrapper">
+                            <label class="checkboxcont">
+                                <p>Tower</p>
+                                <input type="checkbox" id="cb-formfactor-tower">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-content-elem">
+                        <p>Цена, ₽</p> 
+                        <div class="fce-wrapper" style="flex-direction: column; gap: 16px;">
+                            <div class="range-box">
+                                <div class="prc-min prc-elem" style="border-radius: 10px 0px 0px 10px;">
+                                    <p>0</p>
+                                </div>
+                                <div class="prc-max prc-elem" style="border-radius: 0px 10px 10px 0px;">
+                                    <p>3 000 000</p>
+                                </div>
+                            </div>
+                            <div class="price-range-slider">
+                                
+                                <div class="prs-min prs">
+                                    
+                                </div>
+
+                                <div class="prs-max prs">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-content-elem">
+                        <p>Количество дисков</p> 
+                        <div class="fce-wrapper" style="flex-direction: column; gap: 16px;">
+                            <div class="range-box">
+                                <div class="prc-min prc-elem" style="border-radius: 10px 0px 0px 10px;">
+                                    <div class="input-wrap"><span style="color: #737f8c;">от</span> <input type="number" min="1" max="32" value="2"></div>
+                                </div>
+                                <div class="prc-max prc-elem" style="border-radius: 0px 10px 10px 0px;">
+                                    <div class="input-wrap"><span style="color: #737f8c;">до</span> <input type="number" min="1" max="32" value="32"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-content-elem">
+                        <p>RAID контроллер</p> 
+                        <div class="fce-wrapper" style="flex-direction: column; gap: 16px;">
+                            <div class="dropdown-container mode-2">
+                                <div class="dropdown">
+                                    <div class="content-container">
+                                    <div class="cont hidden">
+                                        <div class="option" id="0"><img class="ddc-opt-LangIco" src="" style="display: none;" draggable="false">Test</div>
+                                        <div class="option" id="1"><img class="ddc-opt-LangIco" src="" style="display: none;" draggable="false">Test</div>
+                                        <div class="option" id="2"><img class="ddc-opt-LangIco" src="" style="display: none;" draggable="false">Test</div>
+                                        <div class="option" id="3"><img class="ddc-opt-LangIco" src="" style="display: none;" draggable="false">Test</div>
+                                    </div>
+                                    </div>
+                                    <div class="upper" chosenOption="0">
+                                        <div id="ico-lang"></div><p>Option here</p>
+                                        <div class="arrow-down"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-content-elem">
+                        <p>Количество процессоров</p> 
+                        <div class="fce-wrapper">
+                            <label class="checkboxcont">
+                                <p>1</p>
+                                <input type="checkbox" id="cb-cpucount-1">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="fce-wrapper">
+                            <label class="checkboxcont">
+                                <p>2</p>
+                                <input type="checkbox" id="cb-cpucount-2">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="fce-wrapper">
+                            <label class="checkboxcont">
+                                <p>3</p>
+                                <input type="checkbox" id="cb-cpucount-3">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-block prod-content-elem">
+                <div class="pce-topblock">
+                    <div class="dropdown-container mode-2" style="width: 226px;">
+                        <div class="dropdown">
+                            <div class="content-container">
+                            <div class="cont hidden">
+                                <div class="option" id="0"><img class="ddc-opt-LangIco" src="" style="display: none;" draggable="false">По популярности</div>
+                                <div class="option" id="1"><img class="ddc-opt-LangIco" src="" style="display: none;" draggable="false">Test</div>
+                                <div class="option" id="2"><img class="ddc-opt-LangIco" src="" style="display: none;" draggable="false">Test</div>
+                                <div class="option" id="3"><img class="ddc-opt-LangIco" src="" style="display: none;" draggable="false">Test</div>
+                            </div>
+                            </div>
+                            <div class="upper" chosenOption="0">
+                                <div id="ico-lang"></div><p>Option here</p>
+                                <div class="arrow-down"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-container mode-2" style="width: 159px;">
+                        <div class="dropdown">
+                            <div class="content-container">
+                            <div class="cont hidden">
+                                <div class="option" id="0"><img class="ddc-opt-LangIco" src="" style="display: none;" draggable="false">В рублях</div>
+                                <div class="option" id="1"><img class="ddc-opt-LangIco" src="" style="display: none;" draggable="false">Test</div>
+                                <div class="option" id="2"><img class="ddc-opt-LangIco" src="" style="display: none;" draggable="false">Test</div>
+                                <div class="option" id="3"><img class="ddc-opt-LangIco" src="" style="display: none;" draggable="false">Test</div>
+                            </div>
+                            </div>
+                            <div class="upper" chosenOption="0">
+                                <div id="ico-lang"></div><p>Option here</p>
+                                <div class="arrow-down"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pce-goods">
+                    <div class="novinki">
+                        <div class="box-cards">
+                            <div class="box-card">
+                                <div class="card-img">
+                                    <p class="box-mod">Под заказ</p>
+                                    <img draggable="false" src="image/server.png" alt>
+                                    <div class="card-text">
+                                        <h3>DELL R630 8SFF</h3>
+                                        <span>
+                    CPU: 1x Intel Xeon E5-2643v3 (6C 20M Cache 3.40GHz)</span><br>
+                    <span>RAM: 8Гб 1x 8GB DDR4 UDIMM 2400MHz (Поддержка до 64Гб максимально, 4 UDIMM портов)</span><br>
+                    <span>RAID: Dell H730 (1GB+BBU)</span><br>
+                    <span>БП: 2x Dell 750W</span><br>
+                    <span>Network: integrated Network Interface controller Dell 4 port 1Gb</span>
+                                        
+                                    </div>
+                                </div>
+                                <div class="card-fns">
+                                    <h3>от 40 000 ₽</h3>
+                                    <span>Со склада в Китае</span>
+                                    <div class="add-cart">
+                                        <a href="#">В корзину</a>
+                                    </div>
+                                    <div class="add-conf">
+                                        <a href="#">Сконфигурировать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-card">
+                                <div class="card-img">
+                                    <p class="box-mod mod">Только у нас</p>
+                                    <img draggable="false" src="image/server.png" alt>
+                                    <div class="card-text">
+                                        <h3>DELL R630 8SFF</h3>
+                                        <span>
+                    CPU: 1x Intel Xeon E5-2643v3 (6C 20M Cache 3.40GHz)</span><br>
+                    <span>RAM: 8Гб 1x 8GB DDR4 UDIMM 2400MHz (Поддержка до 64Гб максимально, 4 UDIMM портов)</span><br>
+                    <span>RAID: Dell H730 (1GB+BBU)</span><br>
+                    <span>БП: 2x Dell 750W</span><br>
+                    <span>Network: integrated Network Interface controller Dell 4 port 1Gb</span>
+                                        
+                                    </div>
+                                </div>
+                                <div class="card-fns">
+                                    <h3>от 40 000 ₽</h3>
+                                    <span>Со склада в Китае</span>
+                                    <div class="add-cart">
+                                        <a href="#">В корзину</a>
+                                    </div>
+                                    <div class="add-conf">
+                                        <a href="#">Сконфигурировать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-card">
+                                <div class="card-img">
+                                    <img draggable="false" src="image/server.png" alt>
+                                    <div class="card-text">
+                                        <h3>DELL R630 8SFF</h3>
+                                        <span>
+                    CPU: 1x Intel Xeon E5-2643v3 (6C 20M Cache 3.40GHz)</span><br>
+                    <span>RAM: 8Гб 1x 8GB DDR4 UDIMM 2400MHz (Поддержка до 64Гб максимально, 4 UDIMM портов)</span><br>
+                    <span>RAID: Dell H730 (1GB+BBU)</span><br>
+                    <span>БП: 2x Dell 750W</span><br>
+                    <span>Network: integrated Network Interface controller Dell 4 port 1Gb</span>
+                                        
+                                    </div>
+                                </div>
+                                <div class="card-fns">
+                                    <h3>от 40 000 ₽</h3>
+                                    <span>Со склада в Китае</span>
+                                    <div class="add-cart">
+                                        <a href="#">В корзину</a>
+                                    </div>
+                                    <div class="add-conf">
+                                        <a href="#">Сконфигурировать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-card">
+                                <div class="card-img">
+                                    <img draggable="false" src="image/server.png" alt>
+                                    <div class="card-text">
+                                        <h3>DELL R630 8SFF</h3>
+                                        <span>
+                    CPU: 1x Intel Xeon E5-2643v3 (6C 20M Cache 3.40GHz)</span><br>
+                    <span>RAM: 8Гб 1x 8GB DDR4 UDIMM 2400MHz (Поддержка до 64Гб максимально, 4 UDIMM портов)</span><br>
+                    <span>RAID: Dell H730 (1GB+BBU)</span><br>
+                    <span>БП: 2x Dell 750W</span><br>
+                    <span>Network: integrated Network Interface controller Dell 4 port 1Gb</span>
+                                        
+                                    </div>
+                                </div>
+                                <div class="card-fns">
+                                    <h3>от 40 000 ₽</h3>
+                                    <span>Со склада в Китае</span>
+                                    <div class="add-cart">
+                                        <a href="#">В корзину</a>
+                                    </div>
+                                    <div class="add-conf">
+                                        <a href="#">Сконфигурировать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pager">
+                            <div class="pager-elem pe-active"><a>1</a></div>
+                            <div class="pager-elem"><a href="#page2">2</a></div>
+                            <div class="pager-elem"><a href="#page3">3</a></div>
+                            <div class="pager-elem"><a href="#page4">4</a></div>
+                            <div class="pager-elem"><a href="#page5">5</a></div>
+                            <div class="pager-elem"><a href="#page6">6</a></div>
+                            <div class="pager-elem"><a href="#page7">7</a></div>
+                            <div class="pager-elem"><a href="#page8">8</a></div>
+                            <div class="pager-elem pe-more"><a>...</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./dropdown.js"></script>
+</body>
+</html>

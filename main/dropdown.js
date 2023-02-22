@@ -13,6 +13,9 @@ window.addEventListener("click",(ev)=>{
     dd.forEach(list => {
         if (ev.target!==list.querySelector(".dropdown .upper")&&ev.target!==list.querySelector(".dropdown .upper p")) {
             list.querySelector(".dropdown .cont").classList.add("hidden");
+            if (list.querySelector('.arrow-down') != null) {
+                list.querySelector('.dropdown .upper .arrow-down').style= 'transform: scaleY(1);'
+            }
             list.querySelectorAll(".dropdown .cont .option").forEach(element => {
                 if (ev.target==element) {
                     list.querySelector(".dropdown .upper").setAttribute("chosenOption",element.getAttribute("id"));
@@ -21,7 +24,10 @@ window.addEventListener("click",(ev)=>{
                 }
             });
         }else{
-            list.querySelector(".dropdown .cont").classList.toggle("hidden");
+            list.querySelector(".dropdown .cont").classList.remove("hidden");
+            if (list.querySelector('.arrow-down') != null) {
+                list.querySelector('.dropdown .upper .arrow-down').style= 'transform: scaleY(-1);'
+            }
         }
     });
 });
