@@ -8,7 +8,7 @@ dd.forEach(list => {
         }
     }
 });
-/*window.addEventListener("click",(ev)=>{
+window.addEventListener("click",(ev)=>{
     var dd = document.querySelectorAll(".dropdown-container");
     dd.forEach(list => {
         if (ev.target!==list.querySelector(".dropdown .upper")&&ev.target!==list.querySelector(".dropdown .upper p")) {
@@ -24,4 +24,4 @@ dd.forEach(list => {
             list.querySelector(".dropdown .cont").classList.toggle("hidden");
         }
     });
-});*/
+});
