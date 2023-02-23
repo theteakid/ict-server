@@ -7,39 +7,43 @@ if (document.querySelector('.contact-block .cross-close') != null) {
 document.querySelector('.nav__search .nav__search-ico').addEventListener('click',()=>{
     document.querySelector('.nav__search input').focus();
 });
-let __inputmin= document.querySelector('.rb-disknum .prc-min input');
-let __inputmax= document.querySelector('.rb-disknum .prc-max input');
-__inputmin.addEventListener('change',(ev)=>{
-    if (ev.target.value == "" || ev.target.value <= 0) {
-        ev.target.value= 1;
-    }
-    if (ev.target.value > 32) {
-        ev.target.value= 32;
-    }
-});
-__inputmax.addEventListener('change',(ev)=>{
-    if (ev.target.value == "" || ev.target.value <= 0) {
-        ev.target.value= 1;
-    }
-    if (ev.target.value > 32) {
-        ev.target.value= 32;
-    }
-});
-__inputmin= document.querySelector('.rb-pricerange .prc-min input');
-__inputmax= document.querySelector('.rb-pricerange .prc-max input');
-__inputmin.addEventListener('change',(ev)=>{
-    if (ev.target.value == "" || ev.target.value < 0) {
-        ev.target.value= 0;
-    }
-    if (ev.target.value > 3000000) {
-        ev.target.value= 3000000;
-    }
-});
-__inputmax.addEventListener('change',(ev)=>{
-    if (ev.target.value == "" || ev.target.value < 0) {
-        ev.target.value= 0;
-    }
-    if (ev.target.value > 3000000) {
-        ev.target.value= 3000000;
-    }
-});
+if (document.querySelector('.rb-disknum') != null) {
+    let __inputmin= document.querySelector('.rb-disknum .prc-min input');
+    let __inputmax= document.querySelector('.rb-disknum .prc-max input');
+    __inputmin.addEventListener('change',(ev)=>{
+        if (ev.target.value == "" || ev.target.value <= 0) {
+            ev.target.value= 1;
+        }
+        if (ev.target.value > 32) {
+            ev.target.value= 32;
+        }
+    });
+    __inputmax.addEventListener('change',(ev)=>{
+        if (ev.target.value == "" || ev.target.value <= 0) {
+            ev.target.value= 1;
+        }
+        if (ev.target.value > 32) {
+            ev.target.value= 32;
+        }
+    });
+}
+if (document.querySelector('.rb-pricerange') != null) {
+    let __inputmin= document.querySelector('.rb-pricerange .prc-min input');
+    let __inputmax= document.querySelector('.rb-pricerange .prc-max input');
+    __inputmin.addEventListener('change',(ev)=>{
+        if (ev.target.value == "" || ev.target.value < 0) {
+            ev.target.value= 0;
+        }
+        if (ev.target.value > 3000000) {
+            ev.target.value= 3000000;
+        }
+    });
+    __inputmax.addEventListener('change',(ev)=>{
+        if (ev.target.value == "" || ev.target.value < 0) {
+            ev.target.value= 0;
+        }
+        if (ev.target.value > 3000000) {
+            ev.target.value= 3000000;
+        }
+    });
+}

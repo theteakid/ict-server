@@ -708,40 +708,40 @@ sup {
     font-size: 14px;
     text-align: center;
 }
-.ctg__main-container {
+.catalog-servers .ctg__main-container {
     padding: 0 120px;
 }
-.ctg__main-container .tinyblock {
+.catalog-servers .ctg__main-container .tinyblock {
     height: 16px;
     font-weight: 400;
     color: #737F8C;
     font-size: 14px;
 }
-.ctg__main-container #bigtitle {
+.catalog-servers .ctg__main-container #bigtitle {
     font-weight: 700;
     font-size: 64px;
 }
-.ctg__main-container #pownum {
+.catalog-servers .ctg__main-container #pownum {
     font-weight: 600;
     font-size: 18px;
     color: #737F8C;
     margin-top: 12px;
 }
-.ctg__main-container .title-cont {
+.catalog-servers .ctg__main-container .title-cont {
     display: flex;
     gap: 8px;
 }
-.ctg__main-container .title-cont-elem {
+.catalog-servers .ctg__main-container .title-cont-elem {
     
 }
-.ctg__main-container .prod-content {
+.catalog-servers .ctg__main-container .prod-content {
     display: flex;
     margin-top: 32px;
 }
-.ctg__main-container .prod-content .prod-content-elem {
+.catalog-servers .ctg__main-container .prod-content .prod-content-elem {
     width: 100%;
 }
-.ctg__main-container .prod-content .filter-content {
+.catalog-servers .ctg__main-container .prod-content .filter-content {
     display: flex;
     gap: 34px;
     flex-direction: column;
@@ -750,26 +750,26 @@ sup {
     user-select: none;
     -webkit-user-select: none;
 }
-.ctg__main-container .prod-content .filter-content .filter-content-elem {
+.catalog-servers .ctg__main-container .prod-content .filter-content .filter-content-elem {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-.ctg__main-container .prod-content .filter-content .filter-content-elem p {
+.catalog-servers .ctg__main-container .prod-content .filter-content .filter-content-elem p {
     font-weight: 700;
     font-size: 18px;
     color: #000;
     margin-bottom: 8px;
 }
-.ctg__main-container .prod-content .filter-content .filter-content-elem label {
+.catalog-servers .ctg__main-container .prod-content .filter-content .filter-content-elem label {
     font-weight: 400;
     font-size: 16px;
 }
-.ctg__main-container .prod-content .filter-content .filter-content-elem .fce-wrapper {
+.catalog-servers .ctg__main-container .prod-content .filter-content .filter-content-elem .fce-wrapper {
     display: flex;
     align-items: center;
 }
-.ctg__main-container .prod-content .filter-content .filter-content-elem .fce-wrapper .range-box {
+.catalog-servers .ctg__main-container .prod-content .filter-content .filter-content-elem .fce-wrapper .range-box {
     width: 100%;
     height: 48px;
     display: flex;
@@ -780,7 +780,7 @@ sup {
     gap: 2px;
     box-sizing: border-box;
 }
-.ctg__main-container .prod-content .filter-content .filter-content-elem .fce-wrapper .range-box .prc-elem {
+.catalog-servers .ctg__main-container .prod-content .filter-content .filter-content-elem .fce-wrapper .range-box .prc-elem {
     width: 100%;
     height: 100%;
     display: flex;
@@ -789,12 +789,12 @@ sup {
     box-sizing: border-box;
     background: #fff;
 }
-.ctg__main-container .prod-content .filter-content .filter-content-elem .fce-wrapper .range-box .prc-elem p {
+.catalog-servers .ctg__main-container .prod-content .filter-content .filter-content-elem .fce-wrapper .range-box .prc-elem p {
     margin: 0;
     font-weight: 400;
     font-size: 16px;
 }
-.ctg__main-container .prod-content .filter-content .filter-content-elem .fce-wrapper .price-range-slider {
+.catalog-servers .ctg__main-container .prod-content .filter-content .filter-content-elem .fce-wrapper .price-range-slider {
     height: 4px;
     width: 100%;
     background: #EAE7E3;
@@ -802,7 +802,7 @@ sup {
     display: flex;
     align-items: center;
 }
-.ctg__main-container .prod-content .filter-content .filter-content-elem .fce-wrapper .price-range-slider .prs {
+.catalog-servers .ctg__main-container .prod-content .filter-content .filter-content-elem .fce-wrapper .price-range-slider .prs {
     width: 18px;
     height: 18px;
     background: #fff;
@@ -812,20 +812,20 @@ sup {
     cursor: pointer;
     position: absolute;
 }
-.ctg__main-container .prod-content .filter-content .filter-content-elem .fce-wrapper .range-box .prc-elem .input-wrap {
+.catalog-servers .ctg__main-container .prod-content .filter-content .filter-content-elem .fce-wrapper .range-box .prc-elem .input-wrap {
     display: flex;
     flex-direction: row;
     width: 100%;
     gap: 5px;
     align-items: center;
 }
-.ctg__main-container .prod-content .filter-content .filter-content-elem .fce-wrapper .range-box .prc-elem .input-wrap {
+.catalog-servers .ctg__main-container .prod-content .filter-content .filter-content-elem .fce-wrapper .range-box .prc-elem .input-wrap {
     user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -webkit-user-select: none;
 }
-.ctg__main-container .prod-content .filter-content .filter-content-elem .fce-wrapper .range-box .prc-elem input[type="number"] {
+.catalog-servers .ctg__main-container .prod-content .filter-content .filter-content-elem .fce-wrapper .range-box .prc-elem input[type="number"] {
     width: 100%;
     border: 0;
     outline: 0;
@@ -833,7 +833,7 @@ sup {
     font-weight: 400;
     font-size: 16px;
 }
-.checkboxcont {
+.catalog-servers .checkboxcont {
     display: block;
     position: relative;
     padding-left: 25px;
@@ -847,12 +847,12 @@ sup {
     width: 100%;
 }
 
-.checkboxcont p {
+.catalog-servers .checkboxcont p {
     font-weight: 400 !important;
     font-size: 16px !important;
 }
 
-.checkboxcont input {
+.catalog-servers .checkboxcont input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -860,7 +860,7 @@ sup {
     width: 0;
 }
 
-.checkmark {
+.catalog-servers .checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -875,31 +875,31 @@ sup {
     align-items: center;
 }
 
-.checkboxcont:hover input ~ .checkmark {
+.catalog-servers .checkboxcont:hover input ~ .checkmark {
     background-color: #fff;
     border: 2px solid #afada4;
 }
 
-.checkboxcont input:checked ~ .checkmark {
+.catalog-servers .checkboxcont input:checked ~ .checkmark {
     background-color: #2560DC;
     border: 0;
 }
 
-.checkmark:after {
+.catalog-servers .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-.checkboxcont input:checked ~ .checkmark:after {
+.catalog-servers .checkboxcont input:checked ~ .checkmark:after {
     display: block;
 }
 
-.checkboxcont .checkmark:after {
+.catalog-servers .checkboxcont .checkmark:after {
     content: url('../image/checkmark.png');
 }
 
-.prod-content-elem .pce-topblock {
+.catalog-servers .prod-content-elem .pce-topblock {
     height: 48px;
     width: 100%;
     display: flex;
@@ -907,7 +907,7 @@ sup {
     gap: 24px;
 }
 @media (max-width: 969px) {
-    .ctg__main-container {
+    .catalog-servers .ctg__main-container {
         padding: 0 60px;
     }
     .novinki .box-card {
@@ -997,23 +997,23 @@ sup {
     font-size: 25px;
 }
 }
-.catalog-servers {
+.catalog-servers .catalog-servers {
     min-width: 745px;
 }
-.pager {
+.catalog-servers .pager {
     display: flex;
     flex-direction: row;
     gap: 20px;
     margin-top: 30px;
     align-items: center;
 }
-.pager a {
+.catalog-servers .pager a {
     color: #2560DC;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
 }
-.pager .pe-active {
+.catalog-servers .pager .pe-active {
     background: #2560DC;
     border-radius: 8px;
     padding: 8px 16px;
@@ -1022,17 +1022,17 @@ sup {
     -ms-user-select: none;
     -webkit-user-select: none;
 }
-.pager .pe-active a {
+.catalog-servers .pager .pe-active a {
     color: #fff;
     text-decoration: none;
 }
-.pager .pe-more a {
+.catalog-servers .pager .pe-more a {
     user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -webkit-user-select: none;
 }
-.pager .pe-next {
+.catalog-servers .pager .pe-next {
     width: 87px;
     height: 32px;
     background: #EBF5FF;
@@ -1044,4 +1044,16 @@ sup {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+.error404 .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 566px;
+}
+.error404 .content #emoji-shrug {
+    font-size: 48px;
+    color: #737F8C;
+    font-weight: 600;
 }
