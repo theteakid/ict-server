@@ -171,12 +171,12 @@
                     <div class="filter-content-elem">
                         <p>Цена, ₽</p> 
                         <div class="fce-wrapper" style="flex-direction: column; gap: 16px;">
-                            <div class="range-box">
+                            <div class="range-box rb-pricerange">
                                 <div class="prc-min prc-elem" style="border-radius: 10px 0px 0px 10px;">
-                                    <p>0</p>
+                                    <input type="number" min="0" max="3000000" value="0">
                                 </div>
                                 <div class="prc-max prc-elem" style="border-radius: 0px 10px 10px 0px;">
-                                    <p>3 000 000</p>
+                                    <input type="number" min="0" max="3000000" value="3000000">
                                 </div>
                             </div>
                             <div class="price-range-slider">
@@ -194,7 +194,7 @@
                     <div class="filter-content-elem">
                         <p>Количество дисков</p> 
                         <div class="fce-wrapper" style="flex-direction: column; gap: 16px;">
-                            <div class="range-box">
+                            <div class="range-box rb-disknum">
                                 <div class="prc-min prc-elem" style="border-radius: 10px 0px 0px 10px;">
                                     <div class="input-wrap"><span style="color: #737f8c;">от</span> <input type="number" min="1" max="32" value="2"></div>
                                 </div>
@@ -207,7 +207,7 @@
                     <div class="filter-content-elem">
                         <p>RAID контроллер</p> 
                         <div class="fce-wrapper" style="flex-direction: column; gap: 16px;">
-                            <div class="dropdown-container mode-2">
+                            <div class="dropdown-container mode-2 dd-raidcont">
                                 <div class="dropdown">
                                     <div class="content-container">
                                     <div class="cont hidden">
@@ -402,6 +402,7 @@
                             <div class="pager-elem"><a href="#page7">7</a></div>
                             <div class="pager-elem"><a href="#page8">8</a></div>
                             <div class="pager-elem pe-more"><a>...</a></div>
+                            <div class="pager-elem"><a href="#" class="pe-next" draggable="false">Дальше</a></div>
                         </div>
                     </div>
                 </div>

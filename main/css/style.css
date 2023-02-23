@@ -825,7 +825,7 @@ sup {
     -ms-user-select: none;
     -webkit-user-select: none;
 }
-.ctg__main-container .prod-content .filter-content .filter-content-elem .fce-wrapper .range-box .prc-elem .input-wrap input[type="number"] {
+.ctg__main-container .prod-content .filter-content .filter-content-elem .fce-wrapper .range-box .prc-elem input[type="number"] {
     width: 100%;
     border: 0;
     outline: 0;
@@ -844,6 +844,7 @@ sup {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    width: 100%;
 }
 
 .checkboxcont p {
@@ -1030,4 +1031,17 @@ sup {
     -moz-user-select: none;
     -ms-user-select: none;
     -webkit-user-select: none;
+}
+.pager .pe-next {
+    width: 87px;
+    height: 32px;
+    background: #EBF5FF;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

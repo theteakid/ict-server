@@ -42,9 +42,12 @@
     display: none;
 }
 }
-@media (max-width: 781px) {
+@media (max-width: 920px) {
     .range-box {
         font-size: 12px;
+    }
+    .range-box .prc-elem {
+        padding: 12px 4px !important;
     }
     .range-box .prc-elem p {
         font-size: 12px !important;
