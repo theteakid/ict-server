@@ -42,6 +42,14 @@
     display: none;
 }
 }
+@media (max-width: 1097px) {
+    .cart .content-wrapper {
+        flex-direction: column;
+    }
+    .cart .content-wrapper .cw-elem-form {
+        width: 100% !important;
+    }
+}
 @media (max-width: 920px) {
     .range-box {
         font-size: 12px;

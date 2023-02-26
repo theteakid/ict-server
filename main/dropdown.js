@@ -26,7 +26,7 @@ window.addEventListener("click",(ev)=>{
         }else{
             list.querySelector(".dropdown .cont").classList.remove("hidden");
             if (list.querySelector('.arrow-down') != null) {
-                list.querySelector('.dropdown .upper .arrow-down').style= 'transform: scaleY(-1);'
+                list.querySelector('.dropdown .upper .arrow-down').style= 'transform: scaleY(-1);background-position-y: 5px;'
             }
         }
     });
