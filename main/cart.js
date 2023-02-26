@@ -1,13 +1,10 @@
 let __totalprice_elem= document.querySelector(".summary .summary-elem .se-price-wrap .total-price #--price-num");
+let __totalprods_elem= document.querySelector(".summary .title-cont #--pownum");
 let __cart= [
     {
         price: 430000,
         count: 1
     },
-    {
-        price: 430000,
-        count: 1
-    }
 ];
 for (var __i= 0; __i<__cart.length; __i++) {
     let __cart_elem= __cart[__i];
@@ -60,6 +57,9 @@ document.querySelectorAll(".novinki .box-cards .card-fns .cart-act .--oper-remov
         if (__prodcountelem.value > 0) {
             __prodcountelem.value--;
         }
+        if (__prodcountelem.value == 0) {
+            __parentelem.remove();
+        }
         __cart[parseInt(__parentelem.getAttribute("id"))].count= __prodcountelem.value;
         update_cart();
     });
@@ -73,6 +73,9 @@ let __prodcount= document.querySelectorAll('.novinki .box-cards .box-card .card-
         if (ev.target.value > 100) {
             ev.target.value= 100;
         }
+        if (ev.target.value == 0) {
+            __parentelem.remove();
+        }
         __cart[parseInt(__parentelem.getAttribute("id"))].count= ev.target.value;
         update_cart();
     });
@@ -80,8 +83,34 @@ let __prodcount= document.querySelectorAll('.novinki .box-cards .box-card .card-
 update_cart();
 function update_cart() {
     let __totalprice= 0;
+    let __totalprods= 0;
     for (var __i= 0; __i<__cart.length; __i++) {
         __totalprice+= __cart[__i].price*__cart[__i].count;
+        __totalprods+= __cart[__i].count;
     }
     __totalprice_elem.innerHTML= __totalprice;
+    if (__totalprods == 0) {
+        document.querySelector(".content-wrapper .cw-elem-form").style= 'display: none;';
+        document.querySelector(".content-wrapper .cw-elem-summary").style= 'display: none;';
+        document.querySelector(".content-wrapper").insertAdjacentHTML('beforebegin',`
+            <div class="content-error" style="min-height: 256px">
+            <p id="emoji-shrug">¯\\_(:0)_/¯</p>
+            <p style="color: #000;font-weight: 600;font-size: 32px;margin-top: 38px;">Добавьте в корзину нужный товар</p>
+            <p style="color: #000;font-weight: 400;font-size: 16px;margin-top: 8px;">Чтобы его найти, воспользуйтесь поиском или перейдте в каталог</p>
+            <button class="btn__catalog" style="margin-top: 32px;">В каталог</button>
+            </div>
+        `);
+    }
+    if (__totalprods % 10 == 0 || (__totalprods % 10 >= 5 && __totalprods % 10 <= 9) || (__totalprods >= 11 && __totalprods <= 19)) {
+        __totalprods_elem.innerHTML= `${parseInt(__totalprods)} товаров`;
+        return;
+    }
+    if (__totalprods % 10 == 1) {
+        __totalprods_elem.innerHTML= `${parseInt(__totalprods)} товар`;
+        return;
+    }
+    if (__totalprods % 10 >= 2 && __totalprods % 10 <= 4) {
+        __totalprods_elem.innerHTML= `${parseInt(__totalprods)} товара`;
+        return;
+    }
 }

@@ -215,6 +215,9 @@
   * .mode-2 .dropdown .upper .arrow-down {
     position: absolute;
     background: url('../image/down.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 8px;
     width: 20px;
     height: 20px;
     right: 20px;
