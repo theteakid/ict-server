@@ -203,6 +203,7 @@
     .header__menu {
         flex-direction: column;
     }
+    
 }
 @media (max-width: 1463px) {
     .right-contact a {
@@ -224,4 +225,118 @@
     .contact-block .cb-elem a button {
         font-size: 14px;
     }
+}
+@media (max-width: 632px) {
+    .nav__search input {
+        width: 100%;
+    }
+    .nav__catalog .btn__catalog {
+        width: 100%;
+    }
+    .header__nav {
+        gap: 10px;
+    }
+    .topline .tl--cont .tlc--wrap {
+        gap: 12px;
+    }
+    .header__menu {
+        display: block;
+    }
+    .topline .tl--cont .tlc--wrap-left .tlc--elem {
+        width: 100%;
+    }
+    .nav__search {
+        width: 100%;
+    }
+    .header__right {
+        margin-top: 4px;
+    }
+}
+@media (max-width: 455px) {
+    .topline {
+        height: auto;
+    }
+    .topline .tl--cont {
+        flex-direction: column;
+    }
+    .topline .tl--cont .tlc--wrap-right {
+        justify-content: center;
+    }
+    .dropdown-container .dropdown {
+        width: 200px !important;
+    }
+    .dropdown-container .dropdown .content-container .cont {
+        right: -8% !important;
+    }
+    .dropdown-container .dropdown .upper {
+        justify-content: center;
+    }
+    .mode-2 .dropdown {
+        width: 100% !important;
+    }
+    .mode-2 .dropdown .content-container .cont {
+        right: 0 !important;
+    }
+    .mode-2 .dropdown .upper {
+        justify-content: left;
+    }
+}
+@media (max-width: 580px) {
+    .contact-block {
+        display: none !important;
+    }
+}
+@media (max-width: 460px) {
+    .forma {
+        padding: 20px 20px 15px 20px;
+    }
+}
+@media (max-width: 705px) {
+    .ctg__main-container .prod-content {
+        flex-direction: column;
+    }
+    .ctg__main-container .prod-content .pce-goods .novinki .pager {
+        justify-content: center;
+    }
+    .ctg__main-container .prod-content .left-block {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    .range-box {
+        font-size: 16px;
+    }
+    .range-box .prc-elem {
+        padding: 12px 8px !important;
+    }
+    .range-box .prc-elem p {
+        font-size: 16px !important;
+    }
+    .range-box .prc-elem input {
+        font-size: 16px !important;
+    }
+}
+@media (max-width: 470px) {
+    .ctg__main-container .pce-topblock {
+        flex-direction: column !important;
+        height: auto !important;
+    }
+    .ctg__main-container .pce-topblock .mode-2 {
+        width: 100% !important;
+    }
+}
+@media (max-width: 400px) {
+    .ctg__main-container .prod-content .pce-goods .novinki .pager {
+        flex-direction: column;
+    }
+    .ctg__main-container .prod-content .pce-goods .novinki .pager .pe-next {
+        width: 100% !important;
+    }
+    .catalog-servers .ctg__main-container {
+        padding: 0 30px !important;
+    }
+}
+@media (max-width: 430px) {
+   .ctg__main-container #bigtitle {
+        font-size: 48px !important;
+   } 
 }
