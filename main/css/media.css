@@ -60,6 +60,9 @@
     .cart .content-wrapper .cw-elem-form {
         width: 100% !important;
     }
+    .cart .content-wrapper .cw-elem-form .forma {
+        width: 100% !important;
+    }
 }
 @media (max-width: 920px) {
     .range-box {
@@ -280,6 +283,9 @@
     .mode-2 .dropdown .upper {
         justify-content: left;
     }
+    .mode-3 .dropdown {
+        width: 100% !important;
+    }
 }
 @media (max-width: 580px) {
     .contact-block {
@@ -339,4 +345,22 @@
    .ctg__main-container #bigtitle {
         font-size: 48px !important;
    } 
+}
+@media (max-width: 540px) {
+    .cart .summary {
+        flex-direction: column !important;
+        gap: 32px;
+    }
+    .cart .summary .se-right-pos {
+        justify-content: left !important;
+    }
+    .cart .summary .se-price-wrap .total-price {
+        text-align: left !important;
+    }
+    .cart .mode-3 .dropdown .upper {
+        justify-content: left !important;
+    }
+    .cart .cart-container {
+        padding: 0 30px;
+    }
 }
