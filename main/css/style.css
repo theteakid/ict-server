@@ -2,7 +2,6 @@
 
 body {
     font-family: 'IBM Plex Sans', sans-serif;
-    min-width: 685px;
 }
 .header {
     background-image: url('../image/bg.png');
@@ -533,7 +532,6 @@ body {
 }
 .forma {
     margin-top: 100px;
-    width: 100%;
     height: auto;
     background: #F4F5F6;
     border-radius: 8px;

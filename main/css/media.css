@@ -42,6 +42,17 @@
     display: none;
 }
 }
+@media (max-width: 670px) {
+    .feed-container {
+        padding: 39px 47px !important;
+    }
+    .tl--cont {
+        padding: 0 47px !important;
+    }
+    .container {
+        padding: 0 47px !important;
+    }
+}
 @media (max-width: 1097px) {
     .cart .content-wrapper {
         flex-direction: column;
@@ -67,9 +78,6 @@
 @media (max-width: 850px) {
     .novinki .box-card {
         flex-direction: column;
-    }
-    .feed-container {
-        padding: 39px 47px;
     }
     .card-fns {
         gap: 0;
