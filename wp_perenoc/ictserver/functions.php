@@ -13,7 +13,10 @@ add_action( 'wp_enqueue_scripts', function()  {
 
 
     //JS
- //   wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/example.js', array(), '1.0.0', true );
+    wp_enqueue_script( 'index', get_template_directory_uri() . '/assets/js/index.js', array(), '1.0.0', true );
+    //wp_enqueue_script( 'cart', get_template_directory_uri() . '/assets/js/cart.js', array(), '1.0.0', true );
+    wp_enqueue_script( 'm_index', get_template_directory_uri() . '/assets/js/m_index.js', array(), '1.0.0', true );
+    wp_enqueue_script( 'dropdown', get_template_directory_uri() . '/assets/js/dropdown.js', array(), '1.0.0', true );
 });
 
 ?>

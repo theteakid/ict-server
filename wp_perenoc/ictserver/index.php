@@ -28,7 +28,7 @@
                     <div class="box__title di--cont-elem">
                         <p>Серверы</p>
                     </div>
-                    <div class="box__img di--cont-elem" style="background-image: url('image/dellemc-per740-24x25-bezel-lcd-2-above-ff-bold-reflection-1%202.png');">
+                    <div class="box__img di--cont-elem" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/image/dellemc-per740-24x25-bezel-lcd-2-above-ff-bold-reflection-1%202.png');">
                         
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                     <div class="box__title di--cont-elem">
                         <p>Системы хранения данных</p>
                     </div>
-                    <div class="box__img di--cont-elem" style="background-image: url('image/s00009832%203.png');">
+                    <div class="box__img di--cont-elem" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/image/s00009832%203.png');">
                         
                     </div>
                 </div>
@@ -48,7 +48,7 @@
                     <div class="box__title di--cont-elem">
                         <p>Коммутаторы</p>
                     </div>
-                    <div class="box__img di--cont-elem" style="background-image: url('image/iot-gateway-5200-pdp-mod-7%201.png');">
+                    <div class="box__img di--cont-elem" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/image/iot-gateway-5200-pdp-mod-7%201.png');">
                         
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                     <div class="box__title di--cont-elem">
                         <p>МФУ</p>
                     </div>
-                    <div class="box__img di--cont-elem" style="background-image: url('image/2041%201.png');">
+                    <div class="box__img di--cont-elem" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/image/2041%201.png');">
                         
                     </div>
                 </div>
@@ -67,7 +67,7 @@
         <div class="information">
             <div class="info-item">
                 <div class="block-img">
-                    <img draggable="false" src="image/warranty.png" alt>
+                    <img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/warranty.png" alt>
                 </div>
                 <div class="block-title">
                     <span>
@@ -77,7 +77,7 @@
             </div>
             <div class="info-item">
                 <div class="block-img">
-                    <img draggable="false" src="image/law.png" alt>
+                    <img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/law.png" alt>
                 </div>
                 <div class="block-title">
                     <span>
@@ -87,7 +87,7 @@
             </div>
             <div class="info-item">
                 <div class="block-img">
-                    <img draggable="false" src="image/delivery.png" alt>
+                    <img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/delivery.png" alt>
                 </div>
                 <div class="block-title">
                     <span>
@@ -111,7 +111,7 @@
                 <div class="title3">Нужен <br>второй CPU?</div>
                 </div>
                 <div class="img-conf">
-                    <img draggable="false" src="image/imgblock2.png" alt>
+                    <img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/imgblock2.png" alt>
                 </div>
             </div>
         </div>
@@ -125,7 +125,7 @@
                 <div class="box-card">
                     <div class="card-img">
                         <p class="box-mod">Под заказ</p>
-                        <img draggable="false" src="image/server.png" alt>
+                        <img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/server.png" alt>
                         <div class="card-text">
                             <h3>DELL R630 8SFF</h3>
                             <span>
@@ -151,7 +151,7 @@
                 <div class="box-card">
                     <div class="card-img">
                         <p class="box-mod mod">Только у нас</p>
-                        <img draggable="false" src="image/server.png" alt>
+                        <img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/server.png" alt>
                         <div class="card-text">
                             <h3>DELL R630 8SFF</h3>
                             <span>
@@ -176,7 +176,7 @@
                 </div>
                 <div class="box-card">
                     <div class="card-img">
-                        <img draggable="false" src="image/server.png" alt>
+                        <img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/server.png" alt>
                         <div class="card-text">
                             <h3>DELL R630 8SFF</h3>
                             <span>
@@ -201,7 +201,7 @@
                 </div>
                 <div class="box-card">
                     <div class="card-img">
-                        <img draggable="false" src="image/server.png" alt>
+                        <img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/server.png" alt>
                         <div class="card-text">
                             <h3>DELL R630 8SFF</h3>
                             <span>
@@ -230,19 +230,19 @@
         <div class="novovvedenia">
             <div class="novo-img">
                 <div class="img-item">
-                    <img draggable="false" src="image/logo1.png" alt>
+                    <img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/logo1.png" alt>
                 </div>
                 <div class="img-item">
-                    <img draggable="false" src="image/logo2.png" alt>
+                    <img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/logo2.png" alt>
                 </div>
                 <div class="img-item">
-                    <img draggable="false" src="image/logo3.png" alt>
+                    <img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/logo3.png" alt>
                 </div>
                 <div class="img-item">
-                    <img draggable="false" src="image/logo4.png" alt>
+                    <img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/logo4.png" alt>
                 </div>
                 <div class="img-item">
-                    <img draggable="false" src="image/logo5.png" alt>
+                    <img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/logo5.png" alt>
                 </div>
             </div>
             <div class="novo-text">

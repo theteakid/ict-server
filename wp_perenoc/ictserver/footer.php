@@ -1,13 +1,13 @@
     <footer class="footer">
     <div class="contact-block">
         <div class="cross-close"></div>
-        <div class="cb-elem" style="align-items: center;"><a href="#"><img draggable="false" src="image/whatsapp.png" alt> WhatsApp</a></div>
-        <div class="cb-elem" style="align-items: center;"><a href="#"><img draggable="false" src="image/telegram.png" alt> Телеграм</a></div>
+        <div class="cb-elem" style="align-items: center;"><a href="#"><img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/whatsapp.png" alt> WhatsApp</a></div>
+        <div class="cb-elem" style="align-items: center;"><a href="#"><img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/telegram.png" alt> Телеграм</a></div>
         <div class="cb-elem" style="justify-content: center;"><a href="#" style="width: 100%;"><button>Позвоните мне</button></a></div>
     </div>
 <div class="footter">
     <div class="info menu1">
-        <img draggable="false" src="image/logotype2.png" alt>
+        <img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/logotype2.png" alt>
         <p>
             Компания-импортер. Поиск поставщиков, закупка<br>и таможенное оформление продукции из IT-сферы:<br> серверное и телекоммуникационное оборудование,<br> системы хранения данных. Работаем в сегменте<br> B2B.
         </p>
@@ -47,10 +47,10 @@
         <div class="contacts">
             <div class="left-contact">
                 <div class="wa">
-                    <a href="#"><img draggable="false" src="image/telegram.png" alt></a>
+                    <a href="#"><img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/telegram.png" alt></a>
                 </div>
                 <div class="tg">
-                    <a href="#"><img draggable="false" src="image/whatsapp.png" alt></a>
+                    <a href="#"><img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/whatsapp.png" alt></a>
                 </div>
             </div>
             <div class="right-contact">
@@ -63,7 +63,6 @@
     <p>@2023. Server ICT. Все права защищены. Об обработке персональных данных</p>
 </div>
 </footer>
-<script src="./index.js"></script>
-<script src="./dropdown.js"></script>
+    <?php wp_footer(); ?>
 </body>
 </html>

@@ -33,10 +33,10 @@
                         <div class="dropdown">
                             <div class="content-container">
                             <div class="cont hidden">
-                                <div class="option" id="0"><img class="ddc-opt-LangIco" src="image/flag-ru.png" draggable="false">Русский</div>
-                                <div class="option" id="1"><img class="ddc-opt-LangIco" src="image/flag-us.png" draggable="false">English, USA</div>
-                                <div class="option" id="2"><img class="ddc-opt-LangIco" src="image/flag-israel.png" draggable="false">עברית</div>
-                                <div class="option" id="3"><img class="ddc-opt-LangIco" src="image/flag-china.png" draggable="false">中国人</div>
+                                <div class="option" id="0"><img class="ddc-opt-LangIco" src="<?php echo get_template_directory_uri(); ?>/assets/image/flag-ru.png" draggable="false">Русский</div>
+                                <div class="option" id="1"><img class="ddc-opt-LangIco" src="<?php echo get_template_directory_uri(); ?>/assets/image/flag-us.png" draggable="false">English, USA</div>
+                                <div class="option" id="2"><img class="ddc-opt-LangIco" src="<?php echo get_template_directory_uri(); ?>/assets/image/flag-israel.png" draggable="false">עברית</div>
+                                <div class="option" id="3"><img class="ddc-opt-LangIco" src="<?php echo get_template_directory_uri(); ?>/assets/image/flag-china.png" draggable="false">中国人</div>
                             </div>
                             </div>
                             <div class="upper" chosenOption="0">
@@ -51,7 +51,7 @@
        <div class="container">
         <div class="header__menu">
             <div class="header__logo">
-                <a href="index.html"><img draggable="false" src="image/Logotype.png" alt></a>
+                <a href="index.html"><img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/Logotype.png" alt></a>
             </div>
             <div class="header__nav">
                 <div class="nav__catalog">
@@ -72,7 +72,7 @@
                 </div>
                 <div class="cart hr-elem">
                     <a href>
-                        <img draggable="false" src="image/cart.png" alt>
+                        <img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/cart.png" alt>
                     </a>
                 </div>
             </div>
