@@ -1,0 +1,414 @@
+.hidden {
+    display: none;
+}
+* .dropdown-container {
+    font-size: 21px;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    display: flex;
+  }
+  * .dropdown-container .dropdown {
+    position: relative;
+    font-family: "IBM Plex Sans", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  * .dropdown-container .dropdown .content-container {
+    display: flex;
+  }
+  * .dropdown-container .dropdown .content-container .cont {
+    max-height: 200px;
+    overflow-y: scroll;
+    position: absolute;
+    right: 0;
+    top: 42px;
+    border-radius: 10px;
+    height: auto;
+    background-color: #fff;
+    padding: 14px;
+    width: 200px;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  * .dropdown-container .dropdown .content-container .cont .option {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transition: 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  * .dropdown-container .dropdown .content-container .cont .option:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  * .dropdown-container .dropdown .content-container .cont .option:active {
+    transform: scale(0.9);
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  * .dropdown-container .dropdown .content-container .cont .option .ddc-opt-LangIco {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    border-radius: 24px;
+  }
+  * .dropdown-container .dropdown .content-container .cont::-webkit-scrollbar {
+    width: 10px;
+  }
+  * .dropdown-container .dropdown .content-container .cont::-webkit-scrollbar-track {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  * .dropdown-container .dropdown .content-container .cont::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: darkgray;
+  }
+  * .dropdown-container .dropdown .content-container .cont::-webkit-scrollbar-thumb:active {
+    background-color: rgb(116, 116, 116);
+  }
+  * .dropdown-container .dropdown .upper {
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  * .dropdown-container .dropdown .upper #ico-lang {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-size: 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  * .dropdown-container .dropdown .upper2 {
+    color: rgb(255, 255, 255);
+    width: 24px;
+    outline: 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0px;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.5;
+    background-image: url("./img/OhMyTask_PNGs_ICOs/PNGs/dots.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    height: 24px;
+    transition: 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  * .dropdown-container .dropdown .upper2 p {
+    display: none;
+  }
+  * .dropdown-container .dropdown .upper2:hover {
+    opacity: 0.8;
+  }
+  * .dropdown-container .dropdown .upper2:active {
+    background-blend-mode: hue;
+    transform: scale(0.9);
+  }
+
+  /* ========================================== */
+
+  .hidden {
+    display: none;
+}
+* .mode-2 {
+    font-size: 21px;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+    -webkit-user-select: none;
+    display: flex;
+    width: 100%;
+    height: 48px;
+  }
+  * .mode-2 .dropdown {
+    position: relative;
+    font-family: "IBM Plex Sans", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  * .mode-2 .dropdown .content-container {
+    display: flex;
+  }
+  * .mode-2 .dropdown .content-container .cont {
+    width: 100% !important;
+    overflow-y: scroll;
+    position: absolute;
+    top: 48px;
+    right: 0;
+    border-radius: 10px;
+    height: auto;
+    background-color: #fff;
+    padding: 14px;
+    width: 200px;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    box-sizing: border-box;
+  }
+  * .mode-2 .dropdown .content-container .cont .option {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    transition: 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  * .mode-2 .dropdown .content-container .cont .option:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  * .mode-2 .dropdown .content-container .cont .option:active {
+    transform: scale(0.9);
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  * .mode-2 .dropdown .content-container .cont .option .ddc-opt-LangIco {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    border-radius: 24px;
+  }
+  * .mode-2 .dropdown .content-container .cont::-webkit-scrollbar {
+    width: 10px;
+  }
+  * .mode-2 .dropdown .content-container .cont::-webkit-scrollbar-track {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  * .mode-2 .dropdown .content-container .cont::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: darkgray;
+  }
+  * .mode-2 .dropdown .content-container .cont::-webkit-scrollbar-thumb:active {
+    background-color: rgb(116, 116, 116);
+  }
+  * .mode-2 .dropdown .upper {
+    color: #fff;
+    width: 100%;
+    padding: 12px 16px;
+    outline: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    border: 2px solid rgba(10, 8, 6, 0.12);
+    border-radius: 10px;
+    z-index: 0;
+  }
+  * .mode-2 .dropdown .upper .arrow-down {
+    position: absolute;
+    background: url('../image/down.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 8px;
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    z-index: -1;
+  }
+  * .mode-2 .dropdown .upper p {
+    margin: 0 !important;
+    font-weight: 400 !important;
+    color: #000;
+    font-family: 'IBM Plex Sans';
+    font-size: 15px !important;
+  }
+  * .mode-2 .dropdown .upper #ico-lang {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-size: 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+  }
+  * .mode-2 .dropdown .upper2 {
+    color: rgb(255, 255, 255);
+    width: 24px;
+    outline: 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0px;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.5;
+    background-image: url("./img/OhMyTask_PNGs_ICOs/PNGs/dots.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    height: 24px;
+    transition: 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  * .mode-2 .dropdown .upper2 p {
+    display: none;
+  }
+  * .mode-2 .dropdown .upper2:hover {
+    opacity: 0.8;
+  }
+  * .mode-2 .dropdown .upper2:active {
+    background-blend-mode: hue;
+    transform: scale(0.9);
+  }
+/* =========================================================================== */
+* .mode-3 {
+  font-size: 21px;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  display: flex;
+  width: 100%;
+  height: 48px;
+}
+* .mode-3 .dropdown {
+  position: relative;
+  font-family: "IBM Plex Sans", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+* .mode-3 .dropdown .content-container {
+  display: flex;
+  width: 100%;
+}
+* .mode-3 .dropdown .content-container .cont {
+  width: 100% !important;
+  overflow-y: scroll;
+  position: absolute;
+  top: 48px;
+  right: 0;
+  border-radius: 10px;
+  height: auto;
+  background-color: #fff;
+  padding: 14px;
+  width: 200px;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  box-sizing: border-box;
+}
+* .mode-3 .dropdown .content-container .cont .option {
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  transition: 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+* .mode-3 .dropdown .content-container .cont .option:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+* .mode-3 .dropdown .content-container .cont .option:active {
+  transform: scale(0.9);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+* .mode-3 .dropdown .content-container .cont .option .ddc-opt-LangIco {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  border-radius: 24px;
+}
+* .mode-3 .dropdown .content-container .cont::-webkit-scrollbar {
+  width: 10px;
+}
+* .mode-3 .dropdown .content-container .cont::-webkit-scrollbar-track {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+* .mode-3 .dropdown .content-container .cont::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: darkgray;
+}
+* .mode-3 .dropdown .content-container .cont::-webkit-scrollbar-thumb:active {
+  background-color: rgb(116, 116, 116);
+}
+* .mode-3 .dropdown .upper {
+  color: #fff;
+  width: 100%;
+  outline: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+  gap: 5px;
+  font-size: 14px;
+  border-radius: 10px;
+  align-items: flex-end;
+  justify-content: right;
+  z-index: 0;
+  padding-right: 28px;
+}
+* .mode-3 .dropdown .upper .arrow-down {
+  position: absolute;
+  background: url('../image/down2.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 10px;
+  width: 20px;
+  height: 20px;
+  right: 0;
+  z-index: -1;
+}
+* .mode-3 .dropdown .upper p {
+  margin: 0 !important;
+  font-weight: 400 !important;
+  color: #2560DC;
+  font-family: 'IBM Plex Sans';
+  font-size: 15px !important;
+}
+* .mode-3 .dropdown .upper #ico-lang {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-size: 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: none;
+}
+* .mode-3 .dropdown .upper2 {
+  color: rgb(255, 255, 255);
+  width: 24px;
+  outline: 0;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0px;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.5;
+  background-image: url("./img/OhMyTask_PNGs_ICOs/PNGs/dots.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: contain;
+  height: 24px;
+  transition: 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+* .mode-3 .dropdown .upper2 p {
+  display: none;
+}
+* .mode-3 .dropdown .upper2:hover {
+  opacity: 0.8;
+}
+* .mode-3 .dropdown .upper2:active {
+  background-blend-mode: hue;
+  transform: scale(0.9);
+}
