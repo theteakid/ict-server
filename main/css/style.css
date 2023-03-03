@@ -364,7 +364,6 @@ body {
 }
 .box-card {
     display: flex;
-    align-items: center;
     border-radius: 10px;
     justify-content: space-between;
     flex-direction: row;
@@ -425,7 +424,7 @@ body {
 }
 .card-fns .cart-act .ca-elem {
     width: 100%;
-    padding: 0 8px;
+    padding: 8px 8px !important;
 }
 .card-fns .cart-act .--oper-remove {
     width: 16px;
@@ -506,10 +505,14 @@ body {
 .add-conf {
     
 }
+.cf-elem {
+    height: 100%;
+}
 .add-conf a {
     text-decoration: none;
     color: #2560DC !important;
     font-size: 14px;
+    font-weight: 500;
 }
 .novovvedenia {
     display: flex;
@@ -802,11 +805,12 @@ sup {
     margin-top: 50px;
     padding: 0 120px;
 }
-.catalog-servers .ctg__main-container .tinyblock {
+.tinyblock {
     height: 16px;
     font-weight: 400;
     color: #737F8C;
     font-size: 14px;
+    margin-bottom: 8px;
 }
 #bigtitle {
     font-weight: 700;
@@ -821,6 +825,13 @@ sup {
 .catalog-servers .ctg__main-container .title-cont {
     display: flex;
     gap: 8px;
+}
+.title-cont .tce-block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    gap: 64px;
+    width: 60%;
 }
 .catalog-servers .ctg__main-container .title-cont-elem {
     

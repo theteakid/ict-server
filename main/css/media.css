@@ -346,7 +346,7 @@
         font-size: 48px !important;
    } 
 }
-@media (max-width: 540px) {
+@media (max-width: 560px) {
     .cart .summary {
         flex-direction: column !important;
         gap: 32px;
@@ -361,6 +361,9 @@
         justify-content: left !important;
     }
     .cart .cart-container {
-        padding: 0 30px;
+        padding: 0 30px !important;
+    }
+    .title-cont .tce-block {
+        width: 100%;
     }
 }
