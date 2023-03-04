@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: ictserver_shop
+Template Name: ictserver_catalog
 Template Post Type: post, page, product
 */
 

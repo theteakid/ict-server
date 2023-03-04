@@ -15,13 +15,13 @@
             <div class="tl--cont">
                 <div class="tlc--wrap-left tlc--wrap">
                     <div class="tlc--elem">
-                        <a href="#">Оплата и доставка</a>
+                        <a href="order">Оплата и доставка</a>
                     </div>
                     <div class="tlc--elem">
                         <a href="#">Контакты</a>
                     </div>
                     <div class="tlc--elem">
-                        <a href="#">О компании</a>
+                        <a href="about">О компании</a>
                     </div>
                 </div>
                 <div class="tlc--wrap-right tlc--wrap">
@@ -48,11 +48,11 @@
         <div class="container">
             <div class="header__menu">
                 <div class="header__logo">
-                    <a href="index.html"><img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/logotype2.png" alt></a>
+                    <a href="home"><img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/logotype2.png" alt></a>
                 </div>
                 <div class="header__nav">
                     <div class="nav__catalog">
-                        <button class="btn__catalog">Каталог</button>
+                        <button onClick='location.href="catalog"' class="btn__catalog">Каталог</button>
                     </div>
                     <div class="nav__search">
                         <div class="nav__search-ico"></div>
@@ -71,7 +71,7 @@
                         <a href="mailto:info@ictimport.com" style="color: #000;">info@ictimport.com</a>
                     </div>
                     <div class="cart hr-elem">
-                        <a href>
+                        <a href="cart">
                             <img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/cart2.png" alt>
                         </a>
                     </div>

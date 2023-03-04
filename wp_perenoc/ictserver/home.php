@@ -25,13 +25,13 @@ Template Post Type: post, page, product
         <div class="tl--cont">
             <div class="tlc--wrap-left tlc--wrap">
                 <div class="tlc--elem">
-                    <a href="#">Оплата и доставка</a>
+                    <a href="order">Оплата и доставка</a>
                 </div>
                 <div class="tlc--elem">
                     <a href="#">Контакты</a>
                 </div>
                 <div class="tlc--elem">
-                    <a href="#">О компании</a>
+                    <a href="about">О компании</a>
                 </div>
             </div>
             <div class="tlc--wrap-right tlc--wrap">
@@ -58,11 +58,11 @@ Template Post Type: post, page, product
        <div class="container">
         <div class="header__menu">
             <div class="header__logo">
-                <a href="index.html"><img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/Logotype.png" alt></a>
+                <a href="index"><img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/Logotype.png" alt></a>
             </div>
             <div class="header__nav">
                 <div class="nav__catalog">
-                    <button class="btn__catalog">Каталог</button>
+                    <button onClick='location.href="catalog"' class="btn__catalog">Каталог</button>
                 </div>
                 <div class="nav__search">
                     <div class="nav__search-ico"></div>
@@ -78,7 +78,7 @@ Template Post Type: post, page, product
                     <a href="mailto:info@ictimport.com">info@ictimport.com</a>
                 </div>
                 <div class="cart hr-elem">
-                    <a href>
+                    <a href="cart">
                         <img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/cart.png" alt>
                     </a>
                 </div>
@@ -90,22 +90,22 @@ Template Post Type: post, page, product
         </h1>
         <div class="header__tabs">
             <div class="tab__item">
-                <a href="#">Dell</a>
+                <a href="catalog">Dell</a>
             </div>
             <div class="tab__item">
-                <a href="#">Lenovo</a>
+                <a href="catalog">Lenovo</a>
             </div>
             <div class="tab__item">
-                <a href="#">Hewlett Packard</a>
+                <a href="catalog">Hewlett Packard</a>
             </div>
             <div class="tab__item">
-                <a href="#">Huawei</a>
+                <a href="catalog">Huawei</a>
             </div>
             <div class="tab__item">
-                <a href="#">Cisco</a>
+                <a href="catalog">Cisco</a>
             </div>
             <div class="tab__item">
-                <a href="#">Конфигуратор</a>
+                <a href="catalog">Конфигуратор</a>
             </div>
         </div>
         <div class="demo__box">
