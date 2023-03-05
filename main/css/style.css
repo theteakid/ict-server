@@ -71,12 +71,11 @@ body {
 .nav__catalog {
 }
 .btn__catalog {
-    
     width: 123px;
     height: 40px;
     border-radius: 10px;
     border: none;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 24px;
     color: white;
@@ -370,9 +369,11 @@ body {
     gap: 24px;
 }
 .card-img {
+    position: relative;
     display: flex;
 }
 .card-img img {
+    position: relative;
     background: #F4F5F6;
     border-radius: 10px;
     margin-right: 24px;
@@ -392,6 +393,7 @@ body {
     -ms-user-select: none;
     user-select: none;
     -webkit-user-select: none;
+    z-index: 1;
 }
 .mod {
     background-color: #219CEC;
