@@ -97,7 +97,6 @@
         font-size: 12px;
         font-weight: 600;
         color: white;
-        background-color: #58AF40;
         border-radius: 10px;
         padding: 5px 10px;
     }
@@ -288,8 +287,85 @@
     }
 }
 @media (max-width: 580px) {
+    .footer .footter .menu1 {
+        width: 100%;
+    }
+    .warranty {
+        flex-direction: column !important;
+        gap: 12px !important;
+    }
+}
+@media (max-width: 330px) {
+    .warranty {
+        padding: 12px !important;
+    }
+    .warranty .wa-elem img {
+        width: 27px;
+        height: 27px;
+    }
+}
+@media (max-width: 350px) {
+    #bigtitle {
+        font-size: 24px !important;
+        margin-top: 32px !important;
+    }
+}
+@media (max-width: 300px) {
+    .footer .footter .contacts .right-contact a {
+        padding: 4px 12px !important;
+        border-radius: 5px !important;
+    }
+}
+@media (max-width: 538px) {
+    .details-list .det-elem .property, .details-list .det-elem .property p {
+        width: 145px;
+    }
+}
+@media (max-width: 1078px) {
+    .prodpage-container {
+        padding: 0 30px !important;
+    }
+}
+@media (max-width: 1278px) {
+    .title-cont .tce-elem .prod-img-preview {
+        max-width: 306px !important;
+    }
+}
+@media (max-width: 898px) {
+    .title-cont .tce-elem {
+        width: 100%;
+        flex-direction: column !important;
+    }
+    .title-cont .tce-elem .prod-img-preview {
+        width: 100% !important;
+        max-height: 50% !important;
+        max-width: 100% !important;
+    }
+    .title-cont .price-block {
+        width: 100% !important;
+    }
+    .wrapper {
+        flex-direction: column !important;
+    }
+    .wrapper .wrapper-elem {
+        flex-direction: column !important;
+    }
+    .prod-info {
+        margin-top: 80px;
+    }
+}
+@media (max-width: 768px) {
+    .footer .footter .info {
+        width: 100% !important;
+    }
     .contact-block {
         display: none !important;
+    }
+    .footer {
+        padding: 0px 16px !important;
+    }
+    .footer .footter {
+        justify-content: left;
     }
 }
 @media (max-width: 460px) {
