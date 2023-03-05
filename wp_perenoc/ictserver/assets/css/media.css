@@ -1,4 +1,4 @@
-@media (max-width: 1210px) {
+@media screen and (max-width: 1210px) {
 .information {
     display: flex;
     align-items: center;
@@ -42,7 +42,7 @@
     display: none;
 }
 }
-@media (max-width: 670px) {
+@media screen and (max-width: 670px) {
     .feed-container {
         padding: 39px 47px !important;
     }
@@ -53,7 +53,7 @@
         padding: 0 47px !important;
     }
 }
-@media (max-width: 1097px) {
+@media screen and (max-width: 1097px) {
     .cart .content-wrapper {
         flex-direction: column;
     }
@@ -64,7 +64,7 @@
         width: 100% !important;
     }
 }
-@media (max-width: 920px) {
+@media screen and (max-width: 920px) {
     .range-box {
         font-size: 12px;
     }
@@ -78,7 +78,7 @@
         font-size: 12px !important;
     }
 }
-@media (max-width: 850px) {
+@media screen and (max-width: 850px) {
     .novinki .box-card {
         flex-direction: column;
     }
@@ -163,9 +163,9 @@
     font-size: 25px;
 }
 }
-@media (max-width: 484px) {
+@media screen and (max-width: 484px) {
 }
-@media (max-width: 1009px) {
+@media screen and (max-width: 1009px) {
     .conf__img img {
         height: 240px;
     }
@@ -181,7 +181,7 @@
         padding: 31px 35px;
     }
 }
-@media (max-width: 759px) {
+@media screen and (max-width: 759px) {
     .img-conf {
         display: none;
     }
@@ -202,18 +202,18 @@
         font-weight: 600;
     }
 }
-@media (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
     .header__menu {
         flex-direction: column;
     }
     
 }
-@media (max-width: 1463px) {
+@media screen and (max-width: 1463px) {
     .right-contact a {
         
     }
 }
-@media (max-width: 1290px) {
+@media screen and (max-width: 1290px) {
     .feed-container {
         padding: 39px 120px;
     }
@@ -229,7 +229,7 @@
         font-size: 14px;
     }
 }
-@media (max-width: 632px) {
+@media screen and (max-width: 632px) {
     .nav__search input {
         width: 100%;
     }
@@ -255,7 +255,7 @@
         margin-top: 4px;
     }
 }
-@media (max-width: 455px) {
+@media screen and (max-width: 455px) {
     .topline {
         height: auto;
     }
@@ -287,17 +287,17 @@
         width: 100% !important;
     }
 }
-@media (max-width: 580px) {
+@media screen and (max-width: 580px) {
     .contact-block {
         display: none !important;
     }
 }
-@media (max-width: 460px) {
+@media screen and (max-width: 460px) {
     .forma {
         padding: 20px 20px 15px 20px;
     }
 }
-@media (max-width: 705px) {
+@media screen and (max-width: 705px) {
     .ctg__main-container .prod-content {
         flex-direction: column;
     }
@@ -321,7 +321,7 @@
         font-size: 16px !important;
     }
 }
-@media (max-width: 470px) {
+@media screen and (max-width: 470px) {
     .ctg__main-container .pce-topblock {
         flex-direction: column !important;
         height: auto !important;
@@ -330,7 +330,7 @@
         width: 100% !important;
     }
 }
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
     .ctg__main-container .prod-content .pce-goods .novinki .pager {
         flex-direction: column;
     }
@@ -341,12 +341,12 @@
         padding: 0 30px !important;
     }
 }
-@media (max-width: 430px) {
+@media screen and (max-width: 430px) {
    .ctg__main-container #bigtitle {
         font-size: 48px !important;
    } 
 }
-@media (max-width: 540px) {
+@media screen and (max-width: 540px) {
     .cart .summary {
         flex-direction: column !important;
         gap: 32px;

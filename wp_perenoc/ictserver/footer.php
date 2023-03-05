@@ -15,28 +15,28 @@
     <div class="menu1">
         <h1>Каталог</h1>
         <div class="item-link">
-            <a href="#">Серверы</a>
+            <a href="catalog">Серверы</a>
         </div>
         <div class="item-link">
-            <a href="#">СДХ</a>
+            <a href="catalog">СДХ</a>
         </div>
         <div class="item-link">
-            <a href="#">Коммутаторы</a>
+            <a href="catalog">Коммутаторы</a>
         </div>
         <div class="item-link">
-            <a href="#">МФУ</a>
+            <a href="catalog">МФУ</a>
         </div>
     </div>
     <div class="menu1">
         <h1>Клиентам</h1>
         <div class="item-link">
-            <a href="#">Доставка и оплата</a>
+            <a href="order">Доставка и оплата</a>
         </div>
         <div class="item-link">
             <a href="#">Контакты</a>
         </div>
         <div class="item-link">
-            <a href="#">О компании</a>
+            <a href="about">О компании</a>
         </div>
     </div>
     <div class="menu1">
