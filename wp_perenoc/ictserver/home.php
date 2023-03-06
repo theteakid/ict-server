@@ -28,7 +28,7 @@ Template Post Type: post, page, product
                     <a href="order">Оплата и доставка</a>
                 </div>
                 <div class="tlc--elem">
-                    <a href="#">Контакты</a>
+                    <a href="order">Контакты</a>
                 </div>
                 <div class="tlc--elem">
                     <a href="about">О компании</a>
@@ -84,7 +84,7 @@ Template Post Type: post, page, product
                 </div>
             </div>
         </div>
-    </div>
+    
         <h1 class="header__title">
             Прямые поставки корпоративного <br>оборудования из Китая
         </h1>
@@ -181,6 +181,7 @@ Template Post Type: post, page, product
                     </span>
                 </div>
             </div>
+        </div>
         </div>
     </header>
     <div class="feed-container">
