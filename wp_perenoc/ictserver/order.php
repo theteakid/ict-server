@@ -14,16 +14,17 @@ Template Post Type: post, page, product
         <div class="title-cont">
             <p id="bigtitle" class="title-cont-elem">Оплата и доставка</p>
             <div class="tce-block">
-                <div class="tce-elem">
-                    <p style="font-weight: 600;font-size: 32px;">Способы доставки</p>
-                    <p style="font-weight: 400;font-size: 18px;margin-top: 24px;line-height: 20px;">Для онлайн-заказов доступен максимально полный ассортимент, а также хиты мировых и российских брендов из раздела Супермаркет.</p>
+                <div class="tce-elem" style="flex-direction: column;">
+                    <p style="font-weight: 600;font-size: 32px;"><?php echo get_post_meta($post->ID, 'Заголовок1', true); ?></p>
+                    <p style="font-weight: 400;font-size: 18px;margin-top: 24px;line-height: 20px;"><?php echo get_post_meta($post->ID, 'Способы доставки', true); ?></p>
                 </div>
-                <div class="tce-elem">
-                    <p style="font-weight: 600;font-size: 32px;">Способы оплаты</p>
-                    <p style="font-weight: 400;font-size: 18px;margin-top: 24px;line-height: 20px;">Возможные способы оплаты меняются в зависимости от вашего адреса, а также способа и времени доставки. Увидеть все доступные способы оплаты и выбрать самый удобный вы можете в корзине.</p>
+                <div class="tce-elem" style="flex-direction: column;">
+                    <p style="font-weight: 600;font-size: 32px;"><?php echo get_post_meta($post->ID, 'Заголовок2', true); ?></p>
+                    <p style="font-weight: 400;font-size: 18px;margin-top: 24px;line-height: 20px;"><?php echo get_post_meta($post->ID, 'Способы оплаты', true); ?>
+                    </p>
                 </div>
             </div>
         </div>
-</div>
+    </div>
 </div>
 <?php get_footer(); ?>

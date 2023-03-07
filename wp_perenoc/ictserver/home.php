@@ -74,9 +74,9 @@ Template Post Type: post, page, product
             </div>
             <div class="header__right">
                 <div class="nomber hr-elem">
-                    <a href="tel:88000000000">8 800 000-00-00</a>
+                    <a href="tel:<?php echo get_post_meta($post->ID, 'Телефон', true); ?>"><?php echo get_post_meta($post->ID, 'Телефон', true); ?></a>
                     <br>
-                    <a href="mailto:info@ictimport.com">info@ictimport.com</a>
+                    <a href="mailto:<?php echo get_post_meta($post->ID, 'email', true); ?>"><?php echo get_post_meta($post->ID, 'email', true); ?></a>
                 </div>
                 <div class="cart hr-elem">
                     <a href>

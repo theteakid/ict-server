@@ -94,3 +94,6 @@ function ictserver_content_width() {
 }
 add_action( 'after_setup_theme', 'ictserver_content_width', 0 );
 
+add_theme_support('post-thumbnails');
+add_theme_support('title-tag');
+add_theme_support('custom-logo');

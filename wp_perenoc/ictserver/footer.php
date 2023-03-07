@@ -33,16 +33,16 @@
             <a href="order">Доставка и оплата</a>
         </div>
         <div class="item-link">
-            <a href="#">Контакты</a>
+            <a href="contacts">Контакты</a>
         </div>
         <div class="item-link">
             <a href="about">О компании</a>
         </div>
     </div>
     <div class="menu1">
-        <h1>8 800 000-00-00</h1>
+        <h1><?php echo get_post_meta($post->ID, 'Телефон', true); ?></h1>
         <div class="item-link">
-            <a href="mailto:info@ict-export.com">info@ict-export.com</a>
+            <a href="mailto:<?php echo get_post_meta($post->ID, 'email', true); ?>"><?php echo get_post_meta($post->ID, 'email', true); ?></a>
         </div>
         <div class="contacts">
             <div class="left-contact">
