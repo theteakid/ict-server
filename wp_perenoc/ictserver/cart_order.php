@@ -26,5 +26,5 @@ Template Post Type: post, page, product
             </div>
         </div>
     </div>
-
+</div>
 <?php get_footer(); ?>
