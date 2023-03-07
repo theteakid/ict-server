@@ -9,11 +9,11 @@ document.querySelector(".btn__catalog").addEventListener('click',(ev)=> {
 	});
 	if (ev.target.classList.contains('--cat-opened')) {
 		ev.target.innerHTML= "Закрыть";
-		document.querySelector(".header .header__logo img").src= './image/Logotype2.png';
-		document.querySelector(".header .header__right .cart img").src= './image/cart2.png';
+		document.querySelector(".header .header__logo img").src= 'wp-content/themes/ictserver/assets/image/Logotype2.svg';
+		document.querySelector(".header .header__right .cart img").src= 'wp-content/themes/ictserver/assets/image/cart2.png';
 	}else{
 		ev.target.innerHTML= "Каталог";
-		document.querySelector(".header .header__logo img").src= './image/Logotype.png';
-		document.querySelector(".header .header__right .cart img").src= './image/cart.png';
+		document.querySelector(".header .header__logo img").src= 'wp-content/themes/ictserver/assets/image/Logotype.svg';
+		document.querySelector(".header .header__right .cart img").src= 'wp-content/themes/ictserver/assets/image/cart.png';
 	}
 });
