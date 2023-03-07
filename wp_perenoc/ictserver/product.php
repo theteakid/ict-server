@@ -77,7 +77,7 @@ Template Post Type: post, page, product
                         <div class="wrapper-elem warranty-wrapper">
                             <div class="warranty">
                                 <div class="wa-elem">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/mage/warranty2.png" alt="warranty" draggable="false">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/warranty2.png" alt="warranty" draggable="false">
                                     <p>3-летняя гарантия на сервера и накопители от производителя</p>
                                 </div>
                                 <div class="wa-elem">
