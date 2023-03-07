@@ -59,7 +59,7 @@ Template Post Type: post, page, product
        <div class="container">
         <div class="header__menu">
             <div class="header__logo">
-                <a href="index.html"><img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/Logotype.svg" alt></a>
+                <a href="home"><img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/Logotype.svg" alt></a>
             </div>
             <div class="header__nav">
                 <div class="nav__catalog">
