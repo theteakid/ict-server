@@ -64,5 +64,28 @@
 </div>
 </footer>
     <?php wp_footer(); ?>
+
+
+    <script type="text/javascript">
+        document.querySelector(".btn__catalog").addEventListener('click',(ev)=> {
+    ev.target.classList.toggle('--cat-opened');
+    document.querySelector(".menu__catalog").classList.toggle('--mc-cat-opened');
+    document.querySelector(".header .header__menu").classList.toggle('--cnt-cat-opened');
+    document.querySelector(".header .nav__search input").classList.toggle('searchbar-hl');
+    document.querySelector(".darken").classList.toggle('hidden');
+    document.querySelectorAll(".header .header__right .nomber a").forEach(a__elem=> {
+        a__elem.classList.toggle('nmb-cat-opened');
+    });
+    if (ev.target.classList.contains('--cat-opened')) {
+        ev.target.innerHTML= "Закрыть";
+        document.querySelector(".header .header__logo img").src= '<?php echo get_template_directory_uri(); ?>/assets/image/Logotype2.svg';
+        document.querySelector(".header .header__right .cart img").src= '<?php echo get_template_directory_uri(); ?>/assets/image/cart2.png';
+    }else{
+        ev.target.innerHTML= "Каталог";
+        document.querySelector(".header .header__logo img").src= '<?php echo get_template_directory_uri(); ?>/assets/image/Logotype2.svg';
+        document.querySelector(".header .header__right .cart img").src= '<?php echo get_template_directory_uri(); ?>/assets/image/cart.png';
+    }
+});
+    </script>
 </body>
 </html>
