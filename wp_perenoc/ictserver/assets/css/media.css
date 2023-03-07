@@ -1,4 +1,4 @@
-@media screen and (max-width: 1210px) {
+@media (max-width: 1210px) {
 .information {
     display: flex;
     align-items: center;
@@ -42,7 +42,7 @@
     display: none;
 }
 }
-@media screen and (max-width: 670px) {
+@media (max-width: 670px) {
     .feed-container {
         padding: 39px 47px !important;
     }
@@ -53,7 +53,7 @@
         padding: 0 47px !important;
     }
 }
-@media screen and (max-width: 1097px) {
+@media (max-width: 1097px) {
     .cart .content-wrapper {
         flex-direction: column;
     }
@@ -64,7 +64,7 @@
         width: 100% !important;
     }
 }
-@media screen and (max-width: 920px) {
+@media (max-width: 920px) {
     .range-box {
         font-size: 12px;
     }
@@ -78,7 +78,7 @@
         font-size: 12px !important;
     }
 }
-@media screen and (max-width: 850px) {
+@media (max-width: 850px) {
     .novinki .box-card {
         flex-direction: column;
     }
@@ -97,7 +97,6 @@
         font-size: 12px;
         font-weight: 600;
         color: white;
-        background-color: #58AF40;
         border-radius: 10px;
         padding: 5px 10px;
     }
@@ -163,9 +162,9 @@
     font-size: 25px;
 }
 }
-@media screen and (max-width: 484px) {
+@media (max-width: 484px) {
 }
-@media screen and (max-width: 1009px) {
+@media (max-width: 1009px) {
     .conf__img img {
         height: 240px;
     }
@@ -181,7 +180,7 @@
         padding: 31px 35px;
     }
 }
-@media screen and (max-width: 759px) {
+@media (max-width: 759px) {
     .img-conf {
         display: none;
     }
@@ -202,18 +201,18 @@
         font-weight: 600;
     }
 }
-@media screen and (max-width: 1300px) {
+@media (max-width: 1300px) {
     .header__menu {
         flex-direction: column;
     }
     
 }
-@media screen and (max-width: 1463px) {
+@media (max-width: 1463px) {
     .right-contact a {
         
     }
 }
-@media screen and (max-width: 1290px) {
+@media (max-width: 1290px) {
     .feed-container {
         padding: 39px 120px;
     }
@@ -229,7 +228,7 @@
         font-size: 14px;
     }
 }
-@media screen and (max-width: 632px) {
+@media (max-width: 632px) {
     .nav__search input {
         width: 100%;
     }
@@ -244,6 +243,7 @@
     }
     .header__menu {
         display: block;
+        padding: 0 10px 20px 10px;
     }
     .topline .tl--cont .tlc--wrap-left .tlc--elem {
         width: 100%;
@@ -255,7 +255,7 @@
         margin-top: 4px;
     }
 }
-@media screen and (max-width: 455px) {
+@media (max-width: 455px) {
     .topline {
         height: auto;
     }
@@ -287,17 +287,102 @@
         width: 100% !important;
     }
 }
-@media screen and (max-width: 580px) {
+@media (max-width: 580px) {
+    .footer .footter .menu1 {
+        width: 100%;
+    }
+    .warranty {
+        flex-direction: column !important;
+        gap: 12px !important;
+    }
+}
+@media (max-width: 330px) {
+    .warranty {
+        padding: 12px !important;
+    }
+    .warranty .wa-elem img {
+        width: 27px;
+        height: 27px;
+    }
+}
+@media (max-width: 350px) {
+    #bigtitle {
+        font-size: 24px !important;
+        margin-top: 32px !important;
+    }
+}
+@media (max-width: 300px) {
+    .footer .footter .contacts .right-contact a {
+        padding: 4px 12px !important;
+        border-radius: 5px !important;
+    }
+}
+@media (max-width: 538px) {
+    .details-list .det-elem .property, .details-list .det-elem .property p {
+        width: 145px;
+    }
+}
+@media (max-width: 1078px) {
+    .prodpage-container {
+        padding: 0 30px !important;
+    }
+}
+@media (max-width: 1278px) and (min-width: 899px) {
+    .productpage .title-cont .tce-elem .prod-img-preview {
+        max-width: 306px !important;
+    }
+}
+@media (max-width: 660px) {
+    .plat-vars {
+        flex-direction: column !important;
+    }
+    .plat-vars .pv-filter-cont {
+        min-width: 100% !important;
+    }
+}
+@media (max-width: 898px) {
+    .title-cont .tce-elem {
+        width: 100%;
+        flex-direction: column !important;
+    }
+    .title-cont .tce-elem .prod-img-preview {
+        width: 100% !important;
+        max-height: 50% !important;
+        max-width: 100% !important;
+    }
+    .title-cont .price-block {
+        width: 100% !important;
+    }
+    .wrapper {
+        flex-direction: column !important;
+    }
+    .wrapper .wrapper-elem {
+        flex-direction: column !important;
+    }
+    .prod-info {
+        margin-top: 80px;
+    }
+}
+@media (max-width: 768px) {
+    .footer .footter .info {
+        width: 100% !important;
+    }
     .contact-block {
         display: none !important;
     }
+    .footer {
+        padding: 0px 16px !important;
+    }
+    .footer .footter {
+        justify-content: left;
+    }
 }
-@media screen and (max-width: 460px) {
+@media (max-width: 460px) {
     .forma {
         padding: 20px 20px 15px 20px;
     }
 }
-@media screen and (max-width: 705px) {
+@media (max-width: 705px) {
     .ctg__main-container .prod-content {
         flex-direction: column;
     }
@@ -321,7 +406,7 @@
         font-size: 16px !important;
     }
 }
-@media screen and (max-width: 470px) {
+@media (max-width: 470px) {
     .ctg__main-container .pce-topblock {
         flex-direction: column !important;
         height: auto !important;
@@ -330,7 +415,7 @@
         width: 100% !important;
     }
 }
-@media screen and (max-width: 400px) {
+@media (max-width: 400px) {
     .ctg__main-container .prod-content .pce-goods .novinki .pager {
         flex-direction: column;
     }
@@ -341,12 +426,12 @@
         padding: 0 30px !important;
     }
 }
-@media screen and (max-width: 430px) {
+@media (max-width: 430px) {
    .ctg__main-container #bigtitle {
         font-size: 48px !important;
    } 
 }
-@media screen and (max-width: 540px) {
+@media (max-width: 560px) {
     .cart .summary {
         flex-direction: column !important;
         gap: 32px;
@@ -361,6 +446,20 @@
         justify-content: left !important;
     }
     .cart .cart-container {
-        padding: 0 30px;
+        padding: 0 30px !important;
+    }
+    .title-cont .tce-block {
+        width: 100%;
+    }
+}
+@media (max-width: 1340px) {
+    .plat-dblwrap {
+        flex-direction: column !important;
+    }
+    .plat-dblwrap .prod-img-preview {
+        max-width: 100% !important;
+    }
+    .price-block {
+        width: 100% !important;
     }
 }

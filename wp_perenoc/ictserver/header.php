@@ -9,6 +9,7 @@
     <title>SERVER ICT - интернет-магазин</title>
 </head>
 <body>
+    <div class="darken hidden"></div>
     <header>
     <div class="header" style="background: 0;">
         <div class="topline">
@@ -18,7 +19,7 @@
                         <a href="order">Оплата и доставка</a>
                     </div>
                     <div class="tlc--elem">
-                        <a href="order">Контакты</a>
+                        <a href="contacts">Контакты</a>
                     </div>
                     <div class="tlc--elem">
                         <a href="about">О компании</a>
@@ -52,7 +53,7 @@
                 </div>
                 <div class="header__nav">
                     <div class="nav__catalog">
-                        <button onClick='location.href="catalog"' class="btn__catalog">Каталог</button>
+                        <button class="btn__catalog">Каталог</button>
                     </div>
                     <div class="nav__search">
                         <div class="nav__search-ico"></div>
@@ -77,6 +78,59 @@
                     </div>
                 </div>
             </div>
+<div class="header__mid">
+            <div class="menu__catalog">
+                <div class="catalog__categories">
+                    <div class="--cc-elem --cce-active">
+                        <p>Серверы</p>
+                    </div>
+                    <div class="--cc-elem">
+                        <p>СДХ</p>
+                    </div>
+                    <div class="--cc-elem">
+                        <p>Коммутаторы</p>
+                    </div>
+                    <div class="--cc-elem">
+                        <p>МФУ</p>
+                    </div>
+                </div>
+                <div class="category__container">
+                    <p style="font-size: 32px;font-weight: 600;">Серверы</p>
+                    <div class="cc__columns">
+                        <div class="--cat-elem">
+                            <p style="font-size: 18px;font-weight: 600;line-height: 20px;">Серверы</p>
+                            <a href="catalog">Серверы DELL</a>
+                            <a href="catalog">Серверы Lenovo</a>
+                            <a href="catalog">Серверы HP</a>
+                            <div class="help-note">
+                                <p>
+                                    Поможем 
+                                    сконфигурировать 
+                                    любой сервер
+                                </p>
+                            </div>
+                        </div>
+                        <div class="--cat-elem">
+                            <p style="font-size: 18px;font-weight: 600;line-height: 20px;">Комплектующие</p>
+                            <a href="#">Блоки питания</a>
+                            <a href="#">Жеские диски и SSD</a>
+                            <a href="#">Инфраструктурные опции</a>
+                            <a href="#">Контроллеры SAS и SATA</a>
+                            <a href="#">Серверное ПО</a>
+                            <a href="#">Серверное шасси</a>
+                            <a href="#">Сетевые адаптеры</a>
+                            <a href="#">Оптические приводы</a>
+                        </div>
+                        <div class="--cat-elem">
+                            <p style="font-size: 18px;font-weight: 600;line-height: 20px;">Оборудование KVM</p>
+                            <a href="#">KVM комплектующие</a>
+                            <a href="#">KVM переключатели</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
-    </div>
+       </div>
+   </div>
 </header>

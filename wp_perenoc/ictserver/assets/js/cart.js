@@ -25,8 +25,10 @@ for (var __i= 0; __i<__cart.length; __i++) {
                                 </div>
                             </div>
                             <div class="card-fns">
-                                <h3>${__cart_elem.price} ₽</h3>
-                                <div class="cart-act">
+                                <div class="cf-elem">
+                                    <h3>${__cart_elem.price} ₽</h3>
+                                </div>
+                                <div class="cart-act cf-elem">
                                     <div class="ca-elem --oper-remove" style="justify-content: left;"></div>
                                     <div class="ca-elem --oper-count" style="justify-content: center;">
                                         <input type="number" class="prod-count" value="${__cart_elem.count}" min="0" max="100">
