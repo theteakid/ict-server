@@ -141,10 +141,10 @@ Template Post Type: post, page, product
             </h1>
             <div class="header__tabs">
                 <div class="tab__item">
-                    <a href="#">Dell</a>
+                    <a href="#"><?php echo get_post_meta($post->ID, 'Dell', true); ?></a>
                 </div>
                 <div class="tab__item">
-                    <a href="#">Lenovo</a>
+                    <a href="#"><?php echo get_post_meta($post->ID, 'Dell', true); ?></a>
                 </div>
                 <div class="tab__item">
                     <a href="#">Hewlett Packard</a>
