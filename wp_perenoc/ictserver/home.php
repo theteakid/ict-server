@@ -144,19 +144,19 @@ Template Post Type: post, page, product
                     <a href="#"><?php echo get_post_meta($post->ID, 'Dell', true); ?></a>
                 </div>
                 <div class="tab__item">
-                    <a href="#"><?php echo get_post_meta($post->ID, 'Dell', true); ?></a>
+                    <a href="#"><?php echo get_post_meta($post->ID, 'Lenovo', true); ?></a>
                 </div>
                 <div class="tab__item">
-                    <a href="#">Hewlett Packard</a>
+                    <a href="#"><?php echo get_post_meta($post->ID, 'Hewlett Packard', true); ?></a>
                 </div>
                 <div class="tab__item">
-                    <a href="#">Huawei</a>
+                    <a href="#"><?php echo get_post_meta($post->ID, 'Huawei', true); ?></a>
                 </div>
                 <div class="tab__item">
-                    <a href="#">Cisco</a>
+                    <a href="#"><?php echo get_post_meta($post->ID, 'Cisco', true); ?></a>
                 </div>
                 <div class="tab__item">
-                    <a href="#">Конфигуратор</a>
+                    <a href="#"><?php echo get_post_meta($post->ID, 'Конфигуратор', true); ?></a>
                 </div>
             </div>
             <div class="demo__box">
