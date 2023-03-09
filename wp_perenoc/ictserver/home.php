@@ -851,8 +851,8 @@ function __updateelements() {
 function __updatebtn() {
     if (__menuopened == false) {
         document.querySelector(`.hm__adapt .btn__catalog`).innerHTML= "Каталог";
-        document.querySelector(`.header .hm__adapt .header__logo img`).src= './image/Logotype.svg';
-        document.querySelector(`.header .hm__adapt .header__right .cart img`).src= './image/cart.png';
+        document.querySelector(`.header .hm__adapt .header__logo img`).src= '<?php echo get_template_directory_uri(); ?>/assets/image/Logotype.svg';
+        document.querySelector(`.header .hm__adapt .header__right .cart img`).src= '<?php echo get_template_directory_uri(); ?>/assets/image/cart.png';
         document.querySelector(`.hm__adapt .btn__catalog`).classList.remove('--cat-opened');
         document.querySelector(`.${__menucatalog__}`).classList.remove('--mc-cat-opened');
         document.querySelector(`.header .hm__adapt`).classList.remove('--cnt-cat-opened');
@@ -863,8 +863,8 @@ function __updatebtn() {
         });
 
         document.querySelector(`.hm__desktop .btn__catalog`).innerHTML= "Каталог";
-        document.querySelector(`.header .hm__desktop .header__logo img`).src= './image/Logotype.svg';
-        document.querySelector(`.header .hm__desktop .header__right .cart img`).src= './image/cart.png';
+        document.querySelector(`.header .hm__desktop .header__logo img`).src= '<?php echo get_template_directory_uri(); ?>/assets/image/Logotype.svg';
+        document.querySelector(`.header .hm__desktop .header__right .cart img`).src= '<?php echo get_template_directory_uri(); ?>/assets/image/cart.png';
         document.querySelector(`.hm__desktop .btn__catalog`).classList.remove('--cat-opened');
         document.querySelector(`.${__menucatalog__}`).classList.remove('--mc-cat-opened');
         document.querySelector(`.header .hm__desktop`).classList.remove('--cnt-cat-opened');
@@ -893,8 +893,8 @@ function __updatebtn() {
             a__elem.classList.add('nmb-cat-opened');
         });
         __btncatalog.innerHTML= "Закрыть";
-        document.querySelector(`.header .${__headermenu__} .header__logo img`).src= './image/Logotype2.svg';
-        document.querySelector(`.header .${__headermenu__} .header__right .cart img`).src= './image/cart2.png';
+        document.querySelector(`.header .${__headermenu__} .header__logo img`).src= '<?php echo get_template_directory_uri(); ?>/assets/image/Logotype2.svg';
+        document.querySelector(`.header .${__headermenu__} .header__right .cart img`).src= '<?php echo get_template_directory_uri(); ?>/assets/image/cart2.png';
     }
 }
     </script>
