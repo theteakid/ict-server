@@ -23,7 +23,7 @@ Template Post Type: post, page, product
 
                     </div>
                     <style>
-                    p {
+                    .vivod p {
                         font-weight: 400;
                         font-size: 18px;
                         margin-top: 24px;

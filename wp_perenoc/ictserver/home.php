@@ -26,14 +26,14 @@ Template Post Type: post, page, product
         <div class="tl--cont">
             <div class="tlc--wrap-left tlc--wrap">
                 <div class="tlc--elem">
-                        <a href="order">Оплата и доставка</a>
-                    </div>
-                    <div class="tlc--elem">
-                        <a href="contacts">Контакты</a>
-                    </div>
-                    <div class="tlc--elem">
-                        <a href="about">О компании</a>
-                    </div>
+                    <a href="order">Оплата и доставка</a>
+                </div>
+                <div class="tlc--elem">
+                    <a href="contacts">Контакты</a>
+                </div>
+                <div class="tlc--elem">
+                    <a href="about">О компании</a>
+                </div>
             </div>
             <div class="tlc--wrap-right tlc--wrap">
                 <div class="tlc--elem">
@@ -57,7 +57,23 @@ Template Post Type: post, page, product
         </div>
        </div>
        <div class="container">
-        <div class="header__menu">
+        <div class="menu__catalog mc__adapt">
+                <div class="category__container cc-inactive">
+                    <p style="font-size: 32px;font-weight: 600;" id="cc__catname"></p>
+                    <div class="cc__actionbar">
+                        <div class="arrow-back"></div>
+                    </div>
+                    <div class="cc__columns">
+                    </div>
+                </div>
+                <div class="catalog__categories">
+                    
+                </div>
+                <div class="catalog__subcategories hidden">
+                    
+                </div>
+            </div>
+        <div class="header__menu hm__desktop">
             <div class="header__logo">
                 <a href="home"><img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/Logotype.svg" alt></a>
             </div>
@@ -85,54 +101,41 @@ Template Post Type: post, page, product
                 </div>
             </div>
         </div>
-        <div class="header__mid">
-            <div class="menu__catalog">
-                <div class="catalog__categories">
-                    <div class="--cc-elem --cce-active">
-                        <p>Серверы</p>
+        <div class="header__menu hm__adapt">
+            <div class="hma-elem" style="margin-bottom: 10px;">
+                <div class="he-elem nav__catalog">
+                    <button class="btn__catalog">Каталог</button>
+                </div>
+                <div class="he-elem header__logo" style="justify-content: center;">
+                    <a href="index.html"><img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/Logotype.svg" alt></a>
+                </div>
+                <div class="he-elem header__right">
+                    <div class="nomber hr-elem">
+                        <a href="#">Задать вопрос</a>
                     </div>
-                    <div class="--cc-elem">
-                        <p>СДХ</p>
-                    </div>
-                    <div class="--cc-elem">
-                        <p>Коммутаторы</p>
-                    </div>
-                    <div class="--cc-elem">
-                        <p>МФУ</p>
+                    <div class="cart hr-elem">
+                        <a href>
+                            <img draggable="false" src="<?php echo get_template_directory_uri(); ?>/assets/image/cart2.png" alt>
+                        </a>
                     </div>
                 </div>
-                <div class="category__container">
-                    <p style="font-size: 32px;font-weight: 600;">Серверы</p>
+            </div>
+            <div class="header__nav">
+                <div class="nav__search">
+                    <div class="nav__search-ico"></div>
+                    <form action="#">
+                        <input placeholder="Поиск" type="search">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="header__mid">
+            <div class="menu__catalog mc__desktop">
+                <div class="catalog__categories">
+                </div>
+                <div class="category__container cc-inactive">
+                    <p style="font-size: 32px;font-weight: 600;" id="cc__catname">Серверы</p>
                     <div class="cc__columns">
-                        <div class="--cat-elem">
-                            <p style="font-size: 18px;font-weight: 600;line-height: 20px;">Серверы</p>
-                            <a href="catalog">Серверы DELL</a>
-                            <a href="catalog">Серверы Lenovo</a>
-                            <a href="catalog">Серверы HP</a>
-                            <div class="help-note">
-                                <p>
-                                    Поможем 
-                                    сконфигурировать 
-                                    любой сервер
-                                </p>
-                            </div>
-                        </div>
-                        <div class="--cat-elem">
-                            <p style="font-size: 18px;font-weight: 600;line-height: 20px;">Комплектующие</p>
-                            <a href="#">Блоки питания</a>
-                            <a href="#">Жеские диски и SSD</a>
-                            <a href="#">Инфраструктурные опции</a>
-                            <a href="#">Контроллеры SAS и SATA</a>
-                            <a href="#">Серверное ПО</a>
-                            <a href="#">Серверное шасси</a>
-                            <a href="#">Сетевые адаптеры</a>
-                            <a href="#">Оптические приводы</a>
-                        </div>
-                        <div class="--cat-elem">
-                            <p style="font-size: 18px;font-weight: 600;line-height: 20px;">Оборудование KVM</p>
-                            <a href="#">KVM комплектующие</a>
-                            <a href="#">KVM переключатели</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -141,22 +144,22 @@ Template Post Type: post, page, product
             </h1>
             <div class="header__tabs">
                 <div class="tab__item">
-                    <a href="#"><?php echo get_post_meta($post->ID, 'Dell', true); ?></a>
+                    <a href="#">Dell</a>
                 </div>
                 <div class="tab__item">
-                    <a href="#"><?php echo get_post_meta($post->ID, 'Lenovo', true); ?></a>
+                    <a href="#">Lenovo</a>
                 </div>
                 <div class="tab__item">
-                    <a href="#"><?php echo get_post_meta($post->ID, 'Hewlett Packard', true); ?></a>
+                    <a href="#">Hewlett Packard</a>
                 </div>
                 <div class="tab__item">
-                    <a href="#"><?php echo get_post_meta($post->ID, 'Huawei', true); ?></a>
+                    <a href="#">Huawei</a>
                 </div>
                 <div class="tab__item">
-                    <a href="#"><?php echo get_post_meta($post->ID, 'Cisco', true); ?></a>
+                    <a href="#">Cisco</a>
                 </div>
                 <div class="tab__item">
-                    <a href="#"><?php echo get_post_meta($post->ID, 'Конфигуратор', true); ?></a>
+                    <a href="#">Конфигуратор</a>
                 </div>
             </div>
             <div class="demo__box">
@@ -475,25 +478,425 @@ Template Post Type: post, page, product
 
 
     <script type="text/javascript">
-        document.querySelector(".btn__catalog").addEventListener('click',(ev)=> {
-    ev.target.classList.toggle('--cat-opened');
-    document.querySelector(".menu__catalog").classList.toggle('--mc-cat-opened');
-    document.querySelector(".header .header__menu").classList.toggle('--cnt-cat-opened');
-    document.querySelector(".header .nav__search input").classList.toggle('searchbar-hl');
-    document.querySelector(".darken").classList.toggle('hidden');
-    document.querySelectorAll(".header .header__right .nomber a").forEach(a__elem=> {
-        a__elem.classList.toggle('nmb-cat-opened');
-    });
-    if (ev.target.classList.contains('--cat-opened')) {
-        ev.target.innerHTML= "Закрыть";
-        document.querySelector(".header .header__logo img").src= '<?php echo get_template_directory_uri(); ?>/assets/image/Logotype2.svg';
-        document.querySelector(".header .header__right .cart img").src= '<?php echo get_template_directory_uri(); ?>/assets/image/cart2.png';
-    }else{
-        ev.target.innerHTML= "Каталог";
-        document.querySelector(".header .header__logo img").src= '<?php echo get_template_directory_uri(); ?>/assets/image/Logotype.svg';
-        document.querySelector(".header .header__right .cart img").src= '<?php echo get_template_directory_uri(); ?>/assets/image/cart.png';
+let __categorychosen= 0;
+let __subcategorychosen= 0;
+let __categorypage= 0;
+let __menuopened= false;
+let __menuelements=
+[
+    {
+        categorytitle: "Серверы",
+        subcategories:
+        [
+            {
+                subcategorytitle: "Серверы",
+                element:
+                `<div class="--cat-elem">
+                    <p style="font-size: 18px;font-weight: 600;line-height: 20px;">Серверы</p>
+                    <a href="#">Серверы DELL</a>
+                    <a href="#">Серверы Lenovo</a>
+                    <a href="#">Серверы HP</a>
+                    <div class="help-note">
+                            <p>
+                            Поможем 
+                            сконфигурировать 
+                            любой сервер
+                        </p>
+                    </div>
+                </div>`
+            },
+            {
+                subcategorytitle: "Комплектующие",
+                element:
+                `<div class="--cat-elem">
+                    <p style="font-size: 18px;font-weight: 600;line-height: 20px;">Комплектующие</p>
+                    <a href="#">Блоки питания</a>
+                    <a href="#">Жеские диски и SSD</a>
+                    <a href="#">Инфраструктурные опции</a>
+                    <a href="#">Контроллеры SAS и SATA</a>
+                    <a href="#">Серверное ПО</a>
+                    <a href="#">Серверное шасси</a>
+                    <a href="#">Сетевые адаптеры</a>
+                    <a href="#">Оптические приводы</a>
+                </div>`
+            },
+            {
+                subcategorytitle: "Оборудование KVM",
+                element:
+                `<div class="--cat-elem">
+                    <p style="font-size: 18px;font-weight: 600;line-height: 20px;">Оборудование KVM</p>
+                    <a href="#">KVM комплектующие</a>
+                    <a href="#">KVM переключатели</a>
+                </div>`
+            }
+        ]
+    },
+    {
+        categorytitle: "СДХ",
+        subcategories:
+        [
+            {
+                subcategorytitle: "Серверы",
+                element:
+                `<div class="--cat-elem">
+                    <p style="font-size: 18px;font-weight: 600;line-height: 20px;">Серверы</p>
+                    <a href="#">Серверы DELL</a>
+                    <a href="#">Серверы Lenovo</a>
+                    <a href="#">Серверы HP</a>
+                    <div class="help-note">
+                            <p>
+                            Поможем 
+                            сконфигурировать 
+                            любой сервер
+                        </p>
+                    </div>
+                </div>`
+            },
+            {
+                subcategorytitle: "Комплектующие",
+                element:
+                `<div class="--cat-elem">
+                    <p style="font-size: 18px;font-weight: 600;line-height: 20px;">Комплектующие</p>
+                    <a href="#">Блоки питания</a>
+                    <a href="#">Жеские диски и SSD</a>
+                    <a href="#">Инфраструктурные опции</a>
+                    <a href="#">Контроллеры SAS и SATA</a>
+                    <a href="#">Серверное ПО</a>
+                    <a href="#">Серверное шасси</a>
+                    <a href="#">Сетевые адаптеры</a>
+                    <a href="#">Оптические приводы</a>
+                </div>`
+            },
+            {
+                subcategorytitle: "Оборудование KVM",
+                element:
+                `<div class="--cat-elem">
+                    <p style="font-size: 18px;font-weight: 600;line-height: 20px;">Оборудование KVM</p>
+                    <a href="#">KVM комплектующие</a>
+                    <a href="#">KVM переключатели</a>
+                </div>`
+            }
+        ]
+    },
+    {
+        categorytitle: "Коммутаторы",
+        subcategories:
+        [
+            {
+                subcategorytitle: "Серверы",
+                element:
+                `<div class="--cat-elem">
+                    <p style="font-size: 18px;font-weight: 600;line-height: 20px;">Серверы</p>
+                    <a href="#">Серверы DELL</a>
+                    <a href="#">Серверы Lenovo</a>
+                    <a href="#">Серверы HP</a>
+                    <div class="help-note">
+                            <p>
+                            Поможем 
+                            сконфигурировать 
+                            любой сервер
+                        </p>
+                    </div>
+                </div>`
+            },
+            {
+                subcategorytitle: "Комплектующие",
+                element:
+                `<div class="--cat-elem">
+                    <p style="font-size: 18px;font-weight: 600;line-height: 20px;">Комплектующие</p>
+                    <a href="#">Блоки питания</a>
+                    <a href="#">Жеские диски и SSD</a>
+                    <a href="#">Инфраструктурные опции</a>
+                    <a href="#">Контроллеры SAS и SATA</a>
+                    <a href="#">Серверное ПО</a>
+                    <a href="#">Серверное шасси</a>
+                    <a href="#">Сетевые адаптеры</a>
+                    <a href="#">Оптические приводы</a>
+                </div>`
+            },
+            {
+                subcategorytitle: "Оборудование KVM",
+                element:
+                `<div class="--cat-elem">
+                    <p style="font-size: 18px;font-weight: 600;line-height: 20px;">Оборудование KVM</p>
+                    <a href="#">KVM комплектующие</a>
+                    <a href="#">KVM переключатели</a>
+                </div>`
+            }
+        ]
+    },
+    {
+        categorytitle: "МФУ",
+        subcategories:
+        [
+            {
+                subcategorytitle: "Серверы",
+                element:
+                `<div class="--cat-elem">
+                    <p style="font-size: 18px;font-weight: 600;line-height: 20px;">Серверы</p>
+                    <a href="#">Серверы DELL</a>
+                    <a href="#">Серверы Lenovo</a>
+                    <a href="#">Серверы HP</a>
+                    <div class="help-note">
+                            <p>
+                            Поможем 
+                            сконфигурировать 
+                            любой сервер
+                        </p>
+                    </div>
+                </div>`
+            },
+            {
+                subcategorytitle: "Комплектующие",
+                element:
+                `<div class="--cat-elem">
+                    <p style="font-size: 18px;font-weight: 600;line-height: 20px;">Комплектующие</p>
+                    <a href="#">Блоки питания</a>
+                    <a href="#">Жеские диски и SSD</a>
+                    <a href="#">Инфраструктурные опции</a>
+                    <a href="#">Контроллеры SAS и SATA</a>
+                    <a href="#">Серверное ПО</a>
+                    <a href="#">Серверное шасси</a>
+                    <a href="#">Сетевые адаптеры</a>
+                    <a href="#">Оптические приводы</a>
+                </div>`
+            },
+            {
+                subcategorytitle: "Оборудование KVM",
+                element:
+                `<div class="--cat-elem">
+                    <p style="font-size: 18px;font-weight: 600;line-height: 20px;">Оборудование KVM</p>
+                    <a href="#">KVM комплектующие</a>
+                    <a href="#">KVM переключатели</a>
+                </div>`
+            }
+        ]
     }
+];
+let __headermenu__= null;
+let __menucatalog__= null;
+let __compact= false;
+let ___width___= (window.innerWidth > 0) ? window.innerWidth : screen.width;
+let __backarrow= document.querySelector(`.${__menucatalog__} .category__container .arrow-back`);
+let __btncatalog= document.querySelector(`.${__headermenu__} .btn__catalog`);
+__updateelements();
+window.addEventListener('resize',()=>{
+    ___width___= (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    __updateelements();
 });
+function __fillmenu() {
+    for (let __n= 0; __n<__menuelements[__categorychosen]["subcategories"].length; __n++) {
+        document.querySelector(`.mc__adapt .category__container .cc__columns`).insertAdjacentHTML('beforeend',__menuelements[__categorychosen]["subcategories"][__n]["element"]);
+    }
+    for (let __n= 0; __n<__menuelements[__categorychosen]["subcategories"].length; __n++) {
+        document.querySelector(`.mc__desktop .category__container .cc__columns`).insertAdjacentHTML('beforeend',__menuelements[__categorychosen]["subcategories"][__n]["element"]);
+    }
+    for (let __n= 0; __n<__menuelements.length; __n++) {
+        if (__n == __categorychosen) {
+            document.querySelector(`.mc__adapt .catalog__categories`).insertAdjacentHTML('beforeend',`<div class="--cc-elem --cce-active" id="${__n}"><p>${__menuelements[__n]["categorytitle"]}</p></div>`);
+            document.querySelector(`.mc__desktop .catalog__categories`).insertAdjacentHTML('beforeend',`<div class="--cc-elem --cce-active" id="${__n}"><p>${__menuelements[__n]["categorytitle"]}</p></div>`);
+        }else{
+            document.querySelector(`.mc__adapt .catalog__categories`).insertAdjacentHTML('beforeend',`<div class="--cc-elem" id="${__n}"><p>${__menuelements[__n]["categorytitle"]}</p></div>`);
+            document.querySelector(`.mc__desktop .catalog__categories`).insertAdjacentHTML('beforeend',`<div class="--cc-elem" id="${__n}"><p>${__menuelements[__n]["categorytitle"]}</p></div>`);
+        }
+    }
+}
+__fillmenu();
+function __adaptchange() {
+    document.querySelectorAll(`.catalog__categories .--cc-elem`).forEach(__elem=> {
+        __elem.addEventListener('click',(ev)=>{
+            __categorypage= 1;
+            __categorychosen= __elem.getAttribute('id');
+            document.querySelector(`.${__menucatalog__} .catalog__categories .--cce-active`).classList.remove("--cce-active");
+            __elem.classList.add('--cce-active');
+            if (__compact == false) {
+                document.querySelector(`.${__menucatalog__} .category__container #cc__catname`).innerHTML= __menuelements[__categorychosen]["categorytitle"];
+            }
+            __updatemenu();
+        });
+    });
+}
+__adaptchange();
+function __openmenu() {
+    __menuopened= true;
+    __updatebtn();
+}
+__updatemenu();
+function __updatemenu() {
+    if (__categorypage == 2) {
+        if (__compact == true) {
+            document.querySelector(`.${__menucatalog__} .catalog__subcategories`).classList.add("hidden");
+            document.querySelector(`.${__menucatalog__} .category__container .cc__columns`).insertAdjacentHTML('beforeend',__menuelements[__categorychosen]["subcategories"][__subcategorychosen]["element"]);
+        }
+    }
+    else if (__categorypage == 1) {
+        document.querySelectorAll(`.header .${__menucatalog__} .catalog__subcategories .--cc-elem`).forEach(__cceelem=> {
+            __cceelem.remove();
+        });
+        document.querySelectorAll(`.header .${__menucatalog__} .category__container .cc__columns .--cat-elem`).forEach(__catelem=> {
+            __catelem.remove();
+        });
+        if (__compact == true) {
+            document.querySelector(`.${__menucatalog__} .catalog__categories`).classList.add("hidden");
+            document.querySelector(`.${__menucatalog__} .catalog__subcategories`).classList.remove("hidden");
+            for (let __n= 0; __n<__menuelements[__categorychosen]["subcategories"].length; __n++) {
+                if (__n == __subcategorychosen) {
+                    document.querySelector(`.${__menucatalog__} .catalog__subcategories`).insertAdjacentHTML('beforeend',`<div class="--cc-elem --cce-active" id="${__n}"><p>${__menuelements[__categorychosen]["subcategories"][__n]["subcategorytitle"]}</p></div>`);
+                }else{
+                    document.querySelector(`.${__menucatalog__} .catalog__subcategories`).insertAdjacentHTML('beforeend',`<div class="--cc-elem" id="${__n}"><p>${__menuelements[__categorychosen]["subcategories"][__n]["subcategorytitle"]}</p></div>`);
+                }
+            }
+            document.querySelectorAll(`.${__menucatalog__} .catalog__subcategories .--cc-elem`).forEach(__elem=> {
+                __elem.addEventListener('click',(ev)=>{
+                    __categorypage= 2;
+                    __subcategorychosen= __elem.getAttribute('id');
+                    __updatemenu();
+                });
+            });
+        }else{
+            for (let __n= 0; __n<__menuelements[__categorychosen]["subcategories"].length; __n++) {
+                document.querySelector(`.${__menucatalog__} .category__container .cc__columns`).insertAdjacentHTML('beforeend',__menuelements[__categorychosen]["subcategories"][__n]["element"]);
+            }
+        }
+        document.querySelector(`.${__menucatalog__} .category__container`).classList.remove("cc-inactive");
+    }
+    else if (__categorypage == 0) {
+        document.querySelector(`.${__menucatalog__} .catalog__categories`).classList.remove("hidden");
+        if (__compact == true) {
+            document.querySelector(`.${__menucatalog__} .catalog__subcategories`).classList.add("hidden");
+        }
+        document.querySelector(`.${__menucatalog__} .category__container`).classList.add("cc-inactive");
+    }
+}
+    
+function __update() {
+__btncatalog= document.querySelector(`.${__headermenu__} .btn__catalog`);
+__backarrow= document.querySelector(`.${__menucatalog__} .category__container .arrow-back`);
+if (__compact == true) {
+    if (document.querySelector(".mc__desktop").classList.contains("--mc-cat-opened") == true) {
+        document.querySelectorAll(`.header .mc__desktop .catalog__subcategories .--cc-elem`).forEach(__cceelem=> {
+            __cceelem.remove();
+        });
+        document.querySelector(".mc__desktop").classList.remove("--mc-cat-opened");
+        document.querySelector(".mc__adapt").classList.add("--mc-cat-opened");
+        __categorypage= 0;
+        __subcategorychosen= 0;
+        __categorychosen= 0;
+        __openmenu();
+        __adaptchange();
+        __updatemenu();
+    }else{
+        
+    }
+} else {
+    if (document.querySelector(".mc__adapt").classList.contains("--mc-cat-opened") == true) {
+        document.querySelectorAll(`.header .mc__adapt .category__container .cc__columns .--cat-elem`).forEach(__catelem=> {
+            __catelem.remove();
+        });
+        document.querySelectorAll(`.header .mc__adapt .catalog__subcategories .--cc-elem`).forEach(__cceelem=> {
+            __cceelem.remove();
+        });
+        document.querySelector(".mc__adapt").classList.remove("--mc-cat-opened");
+        document.querySelector(".mc__desktop").classList.add("--mc-cat-opened");
+        __categorypage= 0;
+        __subcategorychosen= 0;
+        __categorychosen= 0;
+        __openmenu();
+        __adaptchange();
+        __updatemenu();
+    }else{
+        
+    }
+}
+__btncatalog.addEventListener('mouseover',(ev)=> {
+        __openmenu(ev);
+    });
+    __btncatalog.onclick= (ev)=> {
+        document.querySelector(`.${__menucatalog__} .catalog__categories`).classList.remove("hidden");
+        document.querySelector(`.${__menucatalog__} .category__container`).classList.add("cc-inactive");
+        if (document.querySelector(`.${__headermenu__} .btn__catalog`).classList.contains('--cat-opened')) {
+            __menuopened= false;
+            __updatebtn();
+        }else{
+            __openmenu(ev);
+        }
+    }
+}
+if (__compact == true) {
+    __backarrow.addEventListener('click',(ev)=>{
+            if (__categorypage > 0) {
+                __categorypage--;
+                __updatemenu();
+            }
+        });
+}
+__update();
+function __updateelements() {
+    if (___width___ <= 768)  {
+        __headermenu__= "hm__adapt";
+        __menucatalog__= "mc__adapt";
+        if (!__compact) {
+            __compact= true;
+            __update();
+        }
+    }else{
+        __headermenu__= "hm__desktop";
+        __menucatalog__= "mc__desktop";
+        if (__compact) {
+            __compact= false;
+            __update();
+        }
+    }
+}
+function __updatebtn() {
+    if (__menuopened == false) {
+        document.querySelector(`.hm__adapt .btn__catalog`).innerHTML= "Каталог";
+        document.querySelector(`.header .hm__adapt .header__logo img`).src= './image/Logotype.svg';
+        document.querySelector(`.header .hm__adapt .header__right .cart img`).src= './image/cart.png';
+        document.querySelector(`.hm__adapt .btn__catalog`).classList.remove('--cat-opened');
+        document.querySelector(`.${__menucatalog__}`).classList.remove('--mc-cat-opened');
+        document.querySelector(`.header .hm__adapt`).classList.remove('--cnt-cat-opened');
+        document.querySelector(".header .nav__search input").classList.remove('searchbar-hl');
+        document.querySelector(".darken").classList.add('hidden');
+        document.querySelectorAll(`.header .hm__adapt .header__right .nomber a`).forEach(a__elem=> {
+            a__elem.classList.remove('nmb-cat-opened');
+        });
+
+        document.querySelector(`.hm__desktop .btn__catalog`).innerHTML= "Каталог";
+        document.querySelector(`.header .hm__desktop .header__logo img`).src= './image/Logotype.svg';
+        document.querySelector(`.header .hm__desktop .header__right .cart img`).src= './image/cart.png';
+        document.querySelector(`.hm__desktop .btn__catalog`).classList.remove('--cat-opened');
+        document.querySelector(`.${__menucatalog__}`).classList.remove('--mc-cat-opened');
+        document.querySelector(`.header .hm__desktop`).classList.remove('--cnt-cat-opened');
+        document.querySelector(".header .nav__search input").classList.remove('searchbar-hl');
+        document.querySelector(".darken").classList.add('hidden');
+        document.querySelectorAll(`.header .hm__desktop .header__right .nomber a`).forEach(a__elem=> {
+            a__elem.classList.remove('nmb-cat-opened');
+        });
+
+        document.querySelectorAll(`.header .${__menucatalog__} .catalog__subcategories .--cc-elem`).forEach(__cceelem=> {
+            __cceelem.remove();
+        });
+        if (__compact == true) {
+            document.querySelectorAll(`.header .${__menucatalog__} .category__container .cc__columns .--cat-elem`).forEach(__catelem=> {
+                __catelem.remove();
+            });
+        }
+        __categorychosen= 0;
+    }else{
+        __btncatalog.classList.add('--cat-opened');
+        document.querySelector(`.${__menucatalog__}`).classList.add('--mc-cat-opened');
+        document.querySelector(`.header .${__headermenu__}`).classList.add('--cnt-cat-opened');
+        document.querySelector(".header .nav__search input").classList.add('searchbar-hl');
+        document.querySelector(".darken").classList.remove('hidden');
+        document.querySelectorAll(`.header .${__headermenu__} .header__right .nomber a`).forEach(a__elem=> {
+            a__elem.classList.add('nmb-cat-opened');
+        });
+        __btncatalog.innerHTML= "Закрыть";
+        document.querySelector(`.header .${__headermenu__} .header__logo img`).src= './image/Logotype2.svg';
+        document.querySelector(`.header .${__headermenu__} .header__right .cart img`).src= './image/cart2.png';
+    }
+}
     </script>
 </body>
 </html>
