@@ -11,6 +11,7 @@
     <title>SERVER ICT - интернет-магазин</title>
 </head>
 <body class="cart">
+    <div class="darken hidden"></div>
     <div class="header" style="background: 0;">
         <div class="topline">
             <div class="tl--cont">
@@ -47,7 +48,23 @@
             </div>
         </div>
         <div class="container">
-            <div class="header__menu">
+            <div class="menu__catalog mc__adapt">
+                <div class="category__container cc-inactive">
+                    <p style="font-size: 32px;font-weight: 600;" id="cc__catname"></p>
+                    <div class="cc__actionbar">
+                        <div class="arrow-back"></div>
+                    </div>
+                    <div class="cc__columns">
+                    </div>
+                </div>
+                <div class="catalog__categories">
+                    
+                </div>
+                <div class="catalog__subcategories hidden">
+                    
+                </div>
+            </div>
+            <div class="header__menu hm__desktop">
                 <div class="header__logo">
                     <a href="index.html"><img draggable="false" src="image/Logotype2.svg" alt></a>
                 </div>
@@ -75,6 +92,45 @@
                     </div>
                 </div>
             </div>
+            <div class="header__menu hm__adapt">
+            <div class="hma-elem" style="margin-bottom: 10px;">
+                <div class="he-elem nav__catalog">
+                    <button class="btn__catalog">Каталог</button>
+                </div>
+                <div class="he-elem header__logo" style="justify-content: center;">
+                    <a href="index.html"><img draggable="false" src="image/Logotype.svg" alt></a>
+                </div>
+                <div class="he-elem header__right">
+                    <div class="nomber hr-elem">
+                        <a href="#">Задать вопрос</a>
+                    </div>
+                    <div class="cart hr-elem">
+                        <a href>
+                            <img draggable="false" src="image/cart2.png" alt>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__nav">
+                <div class="nav__search">
+                    <div class="nav__search-ico"></div>
+                    <form action="#">
+                        <input placeholder="Поиск" type="search">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="header__mid">
+            <div class="menu__catalog mc__desktop">
+                <div class="catalog__categories">
+                </div>
+                <div class="category__container cc-inactive">
+                    <p style="font-size: 32px;font-weight: 600;" id="cc__catname">Серверы</p>
+                    <div class="cc__columns">
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
     <div class="cart-container">
@@ -210,5 +266,6 @@
     <script src="./index.js"></script>
     <script src="./dropdown.js"></script>
     <script src="./cart.js"></script>
+    <script src="./catalogmenu.js"></script>
 </body>
 </html>
