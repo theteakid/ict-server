@@ -5,8 +5,9 @@ add_action( 'wp_enqueue_scripts', function()  {
 
     //CSS
     wp_enqueue_style( 'reset', get_template_directory_uri() . '/assets/css/reset.css');
-    //wp_enqueue_style( 'media', get_template_directory_uri() . '/assets/css/media.css');
     wp_enqueue_style( 'style', get_template_directory_uri() . '/assets/css/style.css');
+    wp_enqueue_style( 'media', get_template_directory_uri() . '/assets/css/media.css', array('style'), null, all);
+    
     wp_enqueue_style( 'dropdown', get_template_directory_uri() . '/assets/css/dropdown.css');
 
 
